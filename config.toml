@@ -1,0 +1,15 @@
+baseURL = "http://forgethepath.com/"
+languageCode = "en-us"
+title = "Forge The Path"
+theme = "forge-blog"
+enableRobotsTXT = true
+
+paginate = 5
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[outputs]
+  home = ["HTML", "JSON" ]
+  page = ["HTML" ]

@@ -1,0 +1,21 @@
+{{ define "title" }}
+  {{ .Title }} – {{ .Site.Title }}
+{{ end }}
+
+{{ define "main" }}
+  
+  <section>
+    <header>
+      <h1>{{ .Title }}</h1>
+      <h3>{{.Date.Format "2006-01-02"}}</h3>
+    </header>
+    <article>
+      {{ .Content }}
+    </article>
+  </section>
+
+  <nav>
+   <a href="{{.Site.BaseURL}}{{.Section}}">Back to {{.Section}}</a>
+  </nav>
+  
+{{ end }}

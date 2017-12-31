@@ -1,0 +1,24 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  font-family: 'Helvetica';
+  font-size: 18px;
+}
+
+*, *:before, *:after { box-sizing: inherit; } 
+article, aside, footer, header, nav, section { display: block; }
+
+h1, h2, h3, h4, h5, h6 { font-family: 'Helvetica'; font-weight: 100; }
+h1 { font-size: 40px; }
+
+p {
+  font-family: 'Noto Sans';
+  font-size: 15px;
+  letter-spacing: 0.1px;
+}
+
+a:link, a:visited, 
+a:hover, a:active  { font-family: helvetica;}
+a:link, a:visited  {}
+a:hover, a:active  {}
