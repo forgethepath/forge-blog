@@ -1,7 +1,7 @@
 ---
 title: "My Sixth Post"
 date: 2017-12-29T14:33:19-07:00
-draft: true
+draft: false
 ---
 
 Placerat consectetuer senectus. Facilisi etiam fugiat primis. Himenaeos mauris nisl.

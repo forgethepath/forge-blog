@@ -1,7 +1,7 @@
 ---
 title: "My Fourth Post"
 date: 2017-12-29T14:32:29-07:00
-draft: true
+draft: false
 ---
 
 Placerat consectetuer senectus. Facilisi etiam fugiat primis. Himenaeos mauris nisl.

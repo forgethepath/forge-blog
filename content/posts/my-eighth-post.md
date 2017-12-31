@@ -1,7 +1,7 @@
 ---
 title: "My Eighth  Post"
 date: 2017-12-29T14:34:03-07:00
-draft: true
+draft: false
 ---
 
 Torquent ea tincidunt veniam. Scelerisque elementum magnis faucibus. Aute cursus rutrum habitant litora. Inceptos veniam dolore. Nullam fusce felis.

@@ -1,7 +1,7 @@
 ---
 title: "My Second Post"
 date: 2017-12-28T19:49:58-07:00
-draft: true
+draft: false
 tags: [ "Apple", "Books", "Linux" ]
 ---
 
