@@ -1,4 +1,4 @@
-### **Forge Blog** - powered by Hugo, Github, Netlify, Netlify CMS, Mailgun, Google Cloud Platform, and Algolia.
+### **Forge Blog** - powered by Hugo, Github, Netlify, Netlify CMS, Mailgun, GCP, & Algolia.
 
 ```
 Minimial blog, with a small, modern, codebase. Currently in development.
