@@ -1,1 +1,2 @@
-/api /index.json   200
+/api  /index.json   200
+/rss  /index.xml    200

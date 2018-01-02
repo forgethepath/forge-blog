@@ -4,6 +4,9 @@ title = "Forge The Path"
 theme = "forge-blog"
 enableRobotsTXT = true
 
+[author]
+  name = "Forge"
+
 paginate = 5
 
 [taxonomies]
@@ -11,5 +14,5 @@ paginate = 5
   category = "categories"
 
 [outputs]
-  home = ["HTML", "JSON" ]
+  home = ["HTML", "JSON", "RSS" ]
   page = ["HTML" ]
