@@ -5,9 +5,13 @@
   "author": "Forge <github@forgethepath.com>",
   "license": "MIT",
   "dependencies": {
-    "concurrently": "^3.5.1"
+    "concurrently": "^3.5.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.3"
   },
   "scripts": {
-    "start": "concurrently \"echo hello\" \"echo world\""
+    "start": "concurrently \"hugo server -D\" \"gulp watch\""
   }
 }
