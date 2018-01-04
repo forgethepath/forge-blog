@@ -6,6 +6,15 @@ html, body {
   font-family: "Helvetica";
   font-size: 18px; }
 
+a {
+  color: black; }
+  a:visited {
+    color: black; }
+  a:hover {
+    color: black; }
+  a:active, a:focus {
+    color: black; }
+
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit; }
@@ -23,5 +32,13 @@ p {
   font-family: "Noto Sans";
   font-size: 15px;
   letter-spacing: 0.1px; }
+
+::-moz-selection {
+  background: #000;
+  color: #fff; }
+
+::selection {
+  background: #000;
+  color: #fff; }
 
 /*# sourceMappingURL=sourcemaps/style.css.map */

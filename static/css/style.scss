@@ -9,6 +9,25 @@ html, body {
   font-size: 18px;
 }
 
+@mixin links ($link, $visited, $hover, $active) {
+  & {
+      color: $link;
+      &:visited {
+          color: $visited;
+      }
+      &:hover {
+          color: $hover;
+      }
+      &:active, &:focus {
+          color: $active;
+      }
+  }
+}
+
+a {
+  @include links(rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0));
+}
+
 *, *:before, *:after { box-sizing: inherit; } 
 article, aside, footer, header, nav, section { display: block; }
 
@@ -25,7 +44,5 @@ p {
   letter-spacing: 0.1px;
 }
 
-a:link, a:visited, 
-a:hover, a:active  {}
-a:link, a:visited  {}
-a:hover, a:active  {}
+@mixin mouse-select-color { background: #000; color: #fff; }
+::selection               { @include mouse-select-color; }
