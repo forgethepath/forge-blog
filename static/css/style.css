@@ -3,7 +3,7 @@ html, body {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Helvetica';
+  font-family: "Helvetica";
   font-size: 18px; }
 
 *, *:before, *:after {
@@ -14,19 +14,14 @@ article, aside, footer, header, nav, section {
   display: block; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Helvetica';
   font-weight: 100; }
 
 h1 {
   font-size: 40px; }
 
 p {
-  font-family: 'Noto Sans';
+  font-family: "Noto Sans";
   font-size: 15px;
   letter-spacing: 0.1px; }
-
-a:link, a:visited,
-a:hover, a:active {
-  font-family: helvetica; }
 
 /*# sourceMappingURL=sourcemaps/style.css.map */
