@@ -7,8 +7,6 @@ enableRobotsTXT = true
 [author]
   name = "Forge"
 
-paginate = 5
-
 [taxonomies]
   tag = "tags"
   category = "categories"
@@ -31,3 +29,4 @@ paginate = 5
   weight     = 1
 
 SectionPagesMenu = "main"
+paginate = 5
