@@ -1,23 +1,26 @@
 {{ define "main" }}
   {{ $paginator := .Paginate ((where .Site.Pages "Kind" "page").GroupByDate "2006-01") -}}
-  <section class="archives">
+  <section>
     <ul>
       {{- range $paginator.PageGroups }}
-      <li class="archives-month">{{ .Key }}</li>
-      <li class="archives-monthly-container">
+      <li>{{ .Key }}</li>
         {{- range .Pages }}
         <ul>
-          <li class="archives-item">
+          <li>
             <a href="{{ .Permalink | relURL }}">{{ .Title }}</a>
-            <ul class="taxonomies">
+            <ul>
               {{- if isset .Params "categories" }}
               {{- range .Params.categories }}
-              <li class="taxonomies-item"><a href="{{ "/" | relURL }}categories/{{ . | urlize }}/">{{ . }}</a></li>
+              <li>
+                <a href="{{ "/" | relURL }}categories/{{ . | urlize }}/">{{ . }}</a>
+              </li>
               {{- end }}
               {{- end }}
               {{- if isset .Params "tags" }}
               {{- range .Params.tags }}
-              <li class="taxonomies-item"><a href="{{ "/" | relURL }}tags/{{ . | urlize }}/"><</svg>{{ . }}</a></li>
+              <li>
+                <a href="{{ "/" | relURL }}tags/{{ . | urlize }}/">{{ . }}</a>
+              </li>
               {{- end }}
               {{- end }}
             </ul>
