@@ -26,4 +26,6 @@ server.listen(port, (err) => {
 })
 {{< / highlight >}}
 
+<!--more-->
+
 {{< gist spf13 7896402 >}}
