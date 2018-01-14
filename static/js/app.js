@@ -4,7 +4,8 @@ document.getElementById("forge-news").onsubmit = (event) => {
   let xhr = new XMLHttpRequest();
   event.preventDefault();
 	xhr.open("POST", form.action);
-	xhr.send(formData);
+  xhr.send(formData);
+  console.log("email submitted");
 }
 
 if (window.netlifyIdentity) {
