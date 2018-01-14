@@ -8,6 +8,16 @@ if (window.netlifyIdentity) {
   });
 }
 
+document.getElementById("forge-news").onsubmit = function(e) {
+
+	e.preventDefault();
+	
+	var f = e.target, formData = new FormData(f), xhr = new XMLHttpRequest();
+	
+	xhr.open("POST", f.action);
+	xhr.send(formData);
+}
+
 const search = instantsearch({
   appId: '8NN8HMRB8K',
   apiKey: 'c307b2769e49beebfebf51ed261b0d8b',
