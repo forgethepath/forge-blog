@@ -1,3 +1,12 @@
+document.getElementById("forge-news").onsubmit = (event) => {
+	let form = event.target;
+  let formData = new FormData(form);
+  let xhr = new XMLHttpRequest();
+  event.preventDefault();
+	xhr.open("POST", form.action);
+	xhr.send(formData);
+}
+
 if (window.netlifyIdentity) {
   window.netlifyIdentity.on("init", user => {
     if (!user) {
