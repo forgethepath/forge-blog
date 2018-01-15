@@ -9,14 +9,14 @@ if (window.netlifyIdentity) {
 };
 
 const newsletter = document.getElementById("forge-news")
-newsletter.addEventListener("submit", (event) => {
+newsletter.addEventListener("submit", (event) => {  
   let form = event.target;
   let formData = new FormData(form);
-  let xhr = new XMLHttpRequest()
+  let xhr = new XMLHttpRequest();
   xhr.open("POST", form.action);
   xhr.send(formData);
   event.preventDefault();
-  console.log('hit')
+  console.log('hit');
 }, false); 
 
 const search = instantsearch({
