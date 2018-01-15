@@ -8,8 +8,8 @@ if (window.netlifyIdentity) {
   })
 };
 
-const forgeNews = document.getElementById("forge-news")
-forgeNews.addEventListener("submit", (event) => {
+const newsletter = document.getElementById("forge-news")
+newsletter.addEventListener("submit", (event) => {
   let form = event.target;
   let formData = new FormData(form);
   let xhr = new XMLHttpRequest()
