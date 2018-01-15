@@ -5,15 +5,20 @@ if (window.netlifyIdentity) {
         document.location.href = "/admin/";
       });
     }
-  });
-}
+  })
+};
 
-document.getElementsByName("forge-news").onsubmit = function(e) {
-  e.preventDefault();
-  var f = e.target, formData = new FormData(f), xhr = new XMLHttpRequest();
-  xhr.open("POST", f.action);
+const forgeNews = document.getElementById("forge-news")
+forgeNews.addEventListener("submit", (event) => {
+  let form = event.target;
+  let formData = new FormData(form);
+  let xhr = new XMLHttpRequest()
+  xhr.open("POST", form.action);
   xhr.send(formData);
-}
+  event.preventDefault();
+  console.log('hit')
+}, false); 
+
 
 const search = instantsearch({
   appId: '8NN8HMRB8K',
