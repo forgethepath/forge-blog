@@ -1,7 +1,6 @@
 baseURL = "http://forge-blog.netlify.com/"
 languageCode = "en-us"
 title = "Forge The Path"
-theme = "forge-blog"
 enableRobotsTXT = true
 
 [author]
