@@ -1,0 +1,30 @@
+{{ define "main" }}
+  {{ $paginator := .Paginate ((where .Site.Pages "Kind" "page").GroupByDate "2006") -}}
+  <section class="forge-summary">
+    <ul>
+      {{- range $paginator.PageGroups }}
+        <li>
+          <ul class="forge-summary-date">
+            {{ range (.Pages.GroupByDate "January") }}
+            <li class="forge-summary-month">{{ .Key }}</li>
+            {{- end }}
+            <li class="forge-summary-year">{{ .Key }}</li>
+          </ul>
+        </li> 
+          <li>
+            <ul class="forge-summary-article">
+              {{- range .Pages }}
+                <li>
+                  <a href="{{ .Permalink | relURL }}">{{ .Title }}</a>
+                  <time datetime="{{ .Date.Format (default "2006-01-02" $.Site.Params.dateFormat) }}">
+                    {{ .Date.Format (default "2" $.Site.Params.dateFormat) }}
+                  </time>
+                </li>
+              {{- end }}
+            </ul>
+        </li>
+      {{- end }}
+    </ul>
+  </section>
+  {{ partial "pagination.html" . }}
+{{ end }}

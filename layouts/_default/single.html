@@ -1,21 +1,24 @@
 {{ define "title" }}
   {{ .Title }} – {{ .Site.Title }}
 {{ end }}
-
 {{ define "main" }}
-  
-  <section>
-    <header>
-      <h1>{{ .Title }}</h1>
-      <h3>{{.Date.Format "2006-01-02"}}</h3>
-    </header>
+  <section class="forge-article">
     <article>
+      <header>
+        <h2>{{ .Title }}</h2>
+        <span class="forge-meta-article">
+          <h3>{{.Date.Format "January 2, 2006"}}</h3>
+          <span class="forge-meta-article-tags">
+          {{ range .Params.tags }}
+            <a class="forge-meta-article-tag" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+          {{ end }}
+          </span>
+        </span>
+      </header>
       {{ .Content }}
     </article>
+    <nav class="forge-article-back">
+      <a href="{{.Site.BaseURL}}{{.Section}}">Back to {{.Section}}</a>
+    </nav>
   </section>
-
-  <nav>
-   <a href="{{.Site.BaseURL}}{{.Section}}">Back to {{.Section}}</a>
-  </nav>
-  
 {{ end }}

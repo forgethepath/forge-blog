@@ -1,40 +1,30 @@
 {{ define "main" }}
-
-  <nav>
-    {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
-      <a href="/tags/{{ $name | urlize }}">{{ $name | humanize }} ({{ $taxonomy.Count }})</a>
-    {{end}}
-  </nav>
-  
-  <section>
-    <h1>Posts</h1>
+  <section class="forge-articles">
     {{ range (.Paginator 5).Pages }}
       <article>
         <header>
-          <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-          <h3>{{.Date.Format "2006-01-02"}}</h3>
+          <h2>{{ .Title }}</h2>
+          <div class="forge-meta-article">
+            <h3>{{.Date.Format "January 2, 2006"}}</h3>
+            <span class="forge-meta-article-tags">
+            {{ range .Params.tags }}
+              <a class="forge-meta-article-tag" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+            {{ end }}
+            </span>
+          </div>
         </header>
         <p>
           {{ .Summary }}
         </p>
         {{ if .Truncated }}
-        <nav>
-          <a href="{{ .RelPermalink }}">Read More…</a>
-        </nav>
+          <nav class="forge-articles-readmore">
+            <a href="{{ .RelPermalink }}">Read More</a>
+          </nav>
         {{ end }}
       </article>
     {{ end }}
   </section>
-  
-  <nav>
-    {{ if .Paginator.HasPrev }}
-      <a href="{{ .Paginator.Prev.URL }}">Previous Page</a>
-    {{ end }}
-    {{ if .Paginator.HasNext }}
-      <a href="{{ .Paginator.Next.URL }}">Next Page</a>
-    {{ end }}
-  </nav>
-
+  {{ partial "pagination.html" . }}
 {{ end }}
 
 

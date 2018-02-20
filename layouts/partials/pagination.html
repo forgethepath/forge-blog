@@ -1,0 +1,17 @@
+<nav class="forge-pagintation">
+  <div class="forge-pagination-navigation">
+    {{ if (.Paginator.HasNext) }}
+      <a class="forge-pagination-navigation-older {{ if and .Paginator.HasNext .Paginator.HasPrev }}forge-pagination-navigation-older-alt{{ end }}" href="{{ .Paginator.Next.URL }}">
+          Older {{ if not .Paginator.HasPrev }}Articles{{ end }}
+      </a>
+    {{ end }}
+    {{ if .Paginator.HasPrev }}
+      <a class="forge-pagination-navigation-newer {{ if and .Paginator.HasNext .Paginator.HasPrev }}forge-pagination-navigation-newer-alt{{ end }}" href="{{ .Paginator.Prev.URL }}">
+        Newer {{ if not .Paginator.HasNext }}Articles{{ end }}
+      </a>
+    {{ end }}
+  </div>
+  <div class="forge-pagination-page">
+    Page&nbsp;&nbsp;{{ .Paginator.PageNumber }} &mdash; {{ .Paginator.TotalPages }}
+  </div>
+</nav>

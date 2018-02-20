@@ -16,14 +16,14 @@ enableRobotsTXT = true
 
 [menu]
   [[menu.main]]
-  identifier = "archive"
-  name       = "Archive"
-  url        = "/archive/"
+  identifier = "Summary"
+  name       = "Summary"
+  url        = "/summary/"
   weight     = 0
   
   [[menu.main]]
-  identifier = "home"
-  name       = "Home"
+  identifier = "Articles"
+  name       = "Articles"
   url        = "/"
   weight     = 1
 

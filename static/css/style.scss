@@ -1,17 +1,31 @@
-$font-primary: 'Helvetica';
-$font-secondary: 'Noto Sans';
+/* Base 
+/* ++++++++++++++++++++++++++++++++++++++++++++++ */
+
+$font-primary: 'Franklin Gothic FS';
+$secondary-font: 'IBM Plex Serif';
+
+body {
+  padding-left: 17px;
+  width: calc(100vw - 17px);
+} // stops scroll bar from shifting content
 
 html, body {
   margin: 0;
   padding: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
   box-sizing: border-box; 
   font-family: $font-primary;
-  font-size: 18px;
+  font-size: 19px;
 }
+
+/* Typography
+/* ++++++++++++++++++++++++++++++++++++++++++++++ */
 
 @mixin links ($link, $visited, $hover, $active) {
   & {
       color: $link;
+      text-decoration: none;
       &:visited {
           color: $visited;
       }
@@ -31,18 +45,348 @@ a {
 *, *:before, *:after { box-sizing: inherit; } 
 article, aside, footer, header, nav, section { display: block; }
 
-h1, h2, h3, h4, h5, h6 { font-weight: 100; }
-h1 { font-size: 40px; }
-@for $i from 1 through 6 {
-  h#{$i} {
-  }
+h1, h2, h3, h4, h5, h6 { font-weight: normal; text-decoration: none; margin:0; }
+h1 {
+  font-family: "FONTSPRING DEMO - Franklin Gothic FS MED";
+  text-transform: uppercase;
+  font-size: 184px;
+  line-height: 143px;
+  // background-image: url("https://c1.staticflickr.com/5/4124/5209203814_879375decc_b.jpg");
+  background-color: #4be25f;
+  color: #fff;
+  margin-top: 26px;
 }
+h2 { font-size: 40px; font-weight: 100; }
+h3 { font-size: 18px; color: #848484; }
 
 p {
-  font-family: $font-secondary;
-  font-size: 15px;
+  font-family: $secondary-font;
   letter-spacing: 0.1px;
+  font-size: 19px;
 }
+
+.forge-container {
+  display: flex;
+  justify-content: center;
+}
+
+.forge-content {
+  max-width: 800px;
+}
+
+/* Navigation Bar */
+/* ++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.forge-navigation {
+  text-decoration: none;
+  padding-bottom: 34px;
+  width:800px;
+}
+
+.forge-navigation ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.forge-navigation > ul > li:first-child > a {
+  padding-left:0px;
+}
+
+.forge-navigation a, .forge-navigation a:visited {
+  display: inline-block;
+  color: #717171;
+  padding: 16px 10px 13px 10px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 16px;
+}
+
+.forge-navigation a.active {
+  color: #000;
+}
+
+.forge-navigation a:hover {
+  color: #000;
+}
+
+.forge-navigation .forge-tags .utiltiy-arrow-down {
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent; 
+  border-top: 6px solid #717171;
+  display: inline-block;
+  padding-bottom: 3px;
+  margin-left: 4px;
+}
+.forge-navigation a:hover .utiltiy-arrow-down {
+  border-top: #000 6px solid
+
+}
+
+/* Navigation Bar: Tags Dropdown */
+/* ++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.forge-navigation .forge-tags {
+  position: relative;
+}
+
+.forge-navigation .forge-tags-button {
+
+}
+
+.forge-navigation .forge-tags .forge-tags-dropdown {
+  min-width: 152px;
+  display: inline-block;
+  position: absolute;
+  left:0px;
+  top: 44px;
+  background-color: #fff;
+  border: 1px solid #B9B9B9;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.20);
+  border-radius: 4px;
+  padding: 10px 14px 10px 14px;
+  visibility: hidden;
+}
+
+.forge-navigation .forge-tags .forge-tags-dropdown:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top:-6px;
+  left: 22px;
+  width: 10px;
+  height: 10px; 
+  background: #FFFFFF;
+  border-top:1px solid #b9b9b9;
+  border-left:1px solid #b9b9b9;
+  transform: rotate(45deg);
+}
+
+.forge-navigation .forge-tags .forge-tags-dropdown li {
+  display: flex;
+  align-items: center;
+  padding:0;
+  margin-bottom: 4px;
+}
+
+.forge-navigation .forge-tags .forge-tags-dropdown li:last-child {
+  margin-bottom:0;
+}
+
+.forge-navigation .forge-tags .forge-tags-dropdown li a {
+  display:flex;
+  flex: 1;
+  text-transform: none;
+  font-weight: normal;
+  padding:0;
+}
+
+.forge-navigation .forge-tags .forge-tags-dropdown li a .forge-tags-dropdown-coutner {
+  color: #fff;
+  border: 1px solid #383838;
+  background-color: #6d6d6d;
+  border-radius: 4px;
+  margin-left:auto;
+  padding: 0px 5px 0px 5px;
+  font-size: 14px;
+}
+
+.forge-navigation .forge-tags .forge-tags-dropdown li a .forge-tags-dropdown-tag {
+  display: inline-block;
+  margin-right: 4px;
+  margin-right: 12px;
+}
+
+/* Navigation Bar: Newsletter Form */
+/* ++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.forge-navigation #forge-news-form {
+  margin-left: auto;
+}
+
+.forge-navigation #forge-news {
+  display: flex;
+}
+
+.forge-navigation #forge-news label input {
+  border-radius: 4px 0px 0px 4px;
+  border: solid 1px #ACACAC;
+  padding: 14px 21px 13px 21px;
+  border-right: 0;
+  font-size: 17px;
+  width: 305px;
+  display: inline-block;
+}
+
+.forge-navigation #forge-news label input::placeholder {
+  color: rgb(180, 180, 180);
+}
+
+.forge-navigation #forge-news button {
+  color: #fff;
+  border-radius: 4px;
+  border: solid 1px #000;
+  font-size: 19px;
+  background-color: #000;
+  border-radius: 0px 4px 4px 0px;
+  cursor: pointer;
+  padding: 12px 21px 12px 21px;
+  font-family: $font-primary;
+}
+
+/* List of Articles
+/* ++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.forge-articles article {
+  margin-bottom: 44px;
+}
+
+.forge-articles article nav.forge-articles-readmore a {
+  color: #717171;
+  font-weight: 500;
+}
+
+.forge-articles article nav.forge-articles-readmore a:hover {
+  color: #000;
+}
+
+/* Single Article
+/* ++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.forge-article nav.forge-article-back a {
+  font-weight: 500;
+}
+
+/* All articles
+/* ++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.forge-meta-article {
+  display:flex;
+  align-items: center;
+}
+
+.forge-meta-article .forge-meta-article-tags {
+  display: flex;
+  margin-left: auto;
+}
+
+.forge-meta-article .forge-meta-article-tag {
+  border: solid 3px #000;
+  border-radius: 5px;
+  padding: 2px 10px 2px 10px;
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+/* Summary
+/* ++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.forge-summary {
+  margin-bottom: 44px;
+}
+
+.forge-summary ul {
+  list-style-type: none;
+  padding: 0;
+  margin:0;
+}
+
+.forge-summary .forge-summary-date {
+  display:flex;
+  align-items: center;
+}
+
+.forge-summary .forge-summary-date .forge-summary-year {
+  margin-left: auto;
+  color: #8a8a8a;
+}
+.forge-summary .forge-summary-date .forge-summary-month {
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.forge-summary .forge-summary-article li {
+  display: flex;
+  border-bottom: solid 1px #cacaca;
+  align-items: center;
+  padding-top: 4px;
+  padding-bottom: 4px;
+ }
+
+.forge-summary .forge-summary-article li:first-child {
+  border-top: solid 1px #cacaca;
+}
+
+.forge-summary .forge-summary-article li:last-child {
+  margin-bottom: 16px;
+}
+
+.forge-summary .forge-summary-article li time {
+  margin-left: auto;
+  background-color: #717171;
+  border: solid 2px #545454;
+  color: #fff;
+  border-radius: 100px;
+  font-size: 14px;
+  padding: 4px;
+}
+
+/* Common
+/* ++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.forge-pagintation {
+  display:flex;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #8d8d8d;
+}
+
+.forge-pagintation .forge-pagination-page {
+  margin-left: auto;
+}
+
+.forge-pagintation .forge-pagination-navigation {
+}
+
+.forge-pagintation .forge-pagination-navigation  .forge-pagination-navigation-older,
+.forge-pagintation .forge-pagination-navigation  .forge-pagination-navigation-newer  {
+  color: #8d8d8d;
+}
+
+.forge-pagintation .forge-pagination-navigation  .forge-pagination-navigation-older:hover,
+.forge-pagintation .forge-pagination-navigation  .forge-pagination-navigation-newer:hover  {
+  color: #000;
+}
+
+.forge-pagintation .forge-pagination-navigation  .forge-pagination-navigation-older {
+
+}
+
+.forge-pagintation .forge-pagination-navigation  .forge-pagination-navigation-older-alt {
+  border-right: 1px solid #acacac;
+  padding-right: 4px;
+  margin-right: 8px;
+}
+
+.forge-pagintation .forge-pagination-navigation  .forge-pagination-navigation-newer {
+
+}
+
+.forge-pagintation .forge-pagination-navigation  .forge-pagination-navigation-newer-alt {
+
+}
+
+/* Utility
+/* ++++++++++++++++++++++++++++++++++++++++++++++ */
 
 @mixin mouse-select-color { background: #000; color: #fff; }
 ::selection               { @include mouse-select-color; }
+
+.forge-utility-visible {
+  visibility: visible !important;
+}
