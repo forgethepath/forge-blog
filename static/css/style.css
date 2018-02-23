@@ -72,14 +72,16 @@ html, body {
 /* Typography
 /* ++++++++++++++++++++++++++++++++++++++++++++++ */
 a {
-  color: black;
-  text-decoration: none; }
-  a:visited {
-    color: black; }
-  a:hover {
-    color: black; }
-  a:active, a:focus {
-    color: black; }
+  outline: 0; }
+  a {
+    color: black;
+    text-decoration: none; }
+    a:visited {
+      color: black; }
+    a:hover {
+      color: black; }
+    a:active, a:focus {
+      color: black; }
 
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
@@ -254,12 +256,16 @@ p {
 
 .forge-navigation #forge-news label input {
   border-radius: 4px 0px 0px 4px;
-  border: solid 1px #ACACAC;
+  border: solid 1px;
+  border-color: #ACACAC;
   padding: 14px 21px 13px 21px;
   border-right: 0;
   font-size: 17px;
   width: 305px;
-  display: inline-block; }
+  display: inline-block;
+  font-family: "fg-book";
+  -webkit-transition: ease-in-out, border-color .15s ease-in-out;
+  transition: ease-in-out, border-color .15s ease-in-out; }
 
 .forge-navigation #forge-news label input::-webkit-input-placeholder {
   color: #b4b4b4; }
@@ -272,6 +278,9 @@ p {
 
 .forge-navigation #forge-news label input::placeholder {
   color: #b4b4b4; }
+
+.forge-navigation #forge-news label input:focus {
+  border-color: #0a0a0a; }
 
 .forge-navigation #forge-news button {
   color: #fff;

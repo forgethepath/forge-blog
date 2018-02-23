@@ -48,7 +48,9 @@ html, body {
 
 a {
   @include links(rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0));
+  outline:0;
 }
+
 
 *, *:before, *:after { box-sizing: inherit; } 
 article, aside, footer, header, nav, section { display: block; }
@@ -221,16 +223,31 @@ p {
 
 .forge-navigation #forge-news label input {
   border-radius: 4px 0px 0px 4px;
-  border: solid 1px #ACACAC;
+  border: solid 1px;
+  border-color: #ACACAC;
   padding: 14px 21px 13px 21px;
   border-right: 0;
   font-size: 17px;
   width: 305px;
   display: inline-block;
+  font-family: $font-primary-reg;
+  transition: ease-in-out, border-color .15s ease-in-out;
 }
 
 .forge-navigation #forge-news label input::placeholder {
   color: rgb(180, 180, 180);
+}
+
+.forge-navigation #forge-news label input:focus {
+  border-color: rgb(10, 10, 10);
+}
+
+.forge-navigation #forge-news label input:valid {
+
+}
+
+.forge-navigation #forge-news label input:required {
+  
 }
 
 .forge-navigation #forge-news button {
