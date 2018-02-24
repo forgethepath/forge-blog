@@ -16,7 +16,7 @@ Minimial blog, with a small, modern, codebase. Currently in development.
 Third party serivces ared used for forms, newsletter, and search.
 ```
 
-**Useage:**
+**Usage:**
 ```
 yarn install
 yarn start
