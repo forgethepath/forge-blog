@@ -33,7 +33,7 @@ forgethepath.com/admin
 or
 
 ```
-hugo new posts/my-first-post.md
+hugo new articles/my-first-post.md
 git add -A
 git commit -m "added a new post"
 git push
