@@ -53,7 +53,10 @@ html, body {
   width: 100%;
 }
 
-textarea, input, button { outline: none; }
+textarea, input, button, a { 
+  outline: none; 
+  -webkit-tap-highlight-color: transparent;
+}
 
 /* Typography
 /* ++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -136,6 +139,10 @@ p {
   text-transform: uppercase;
   font-family: $font-primary-demi;
   font-size: 16px;
+  @include sm-screen {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }
 
 .forge-navigation a.active {

@@ -93,8 +93,9 @@ html, body {
   max-width: 800px;
   width: 100%; }
 
-textarea, input, button {
-  outline: none; }
+textarea, input, button, a {
+  outline: none;
+  -webkit-tap-highlight-color: transparent; }
 
 /* Typography
 /* ++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -192,6 +193,10 @@ p {
   text-transform: uppercase;
   font-family: "fg-demi";
   font-size: 16px; }
+  @media screen and (max-width: 700px) {
+    .forge-navigation a, .forge-navigation a:visited {
+      padding-left: 5px;
+      padding-right: 5px; } }
 
 .forge-navigation a.active {
   color: #000; }
