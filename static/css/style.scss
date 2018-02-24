@@ -41,6 +41,9 @@ html, body {
   box-sizing: border-box; 
   font-family: $font-primary-reg;
   @include fluid-type(16px, 19px);
+  @include sm-screen {
+    margin-top: 8px;
+  }
 }
 
 .forge-container {
@@ -252,7 +255,6 @@ p {
   }
 }
 
-
 .forge-navigation #forge-news {
   display: flex;
 }
@@ -269,8 +271,9 @@ p {
   font-family: $font-primary-reg;
   transition: ease-in-out, border-color .15s ease-in-out;
   @include sm-screen {
-    font-size: 15px;
-    width: 247px;
+    font-size: 13px;
+    width: 203px;
+    padding: 15px 12px 13px 10px;
   }
 }
 
