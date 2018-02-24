@@ -1,4 +1,6 @@
-/* Fonts
+/* Breakpoints
+/* ++++++++++++++++++++++++++++++++++++++++++++++ */
+/* Imports
 /* ++++++++++++++++++++++++++++++++++++++++++++++ */
 /*!
  * Web Fonts from Fontspring.com
@@ -53,6 +55,8 @@
   font-weight: normal;
   font-style: normal; }
 
+/* Fonts
+/* ++++++++++++++++++++++++++++++++++++++++++++++ */
 /* Colors
 /* ++++++++++++++++++++++++++++++++++++++++++++++ */
 /* Base 
@@ -76,6 +80,18 @@ html, body {
   @media screen and (min-width: 800px) {
     html, body {
       font-size: 19px; } }
+
+.forge-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.forge-content {
+  max-width: 800px;
+  width: 100%; }
 
 /* Typography
 /* ++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -135,18 +151,6 @@ h3 {
 p {
   font-family: "plex-reg";
   letter-spacing: 0.1px; }
-
-.forge-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-
-.forge-content {
-  max-width: 800px;
-  width: 100%; }
 
 /* Navigation Bar */
 /* ++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -332,7 +336,7 @@ textarea, input, button {
 .forge-article nav.forge-article-back a {
   font-family: "fg-med"; }
 
-/* All articles
+/* All Articles
 /* ++++++++++++++++++++++++++++++++++++++++++++++ */
 .forge-meta-article {
   display: -webkit-box;

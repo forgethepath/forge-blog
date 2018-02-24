@@ -10,7 +10,7 @@ $lg: 800px;
 @import "imports/type/fg.scss";
 @import "imports/type/plex.scss";
 @import "imports/fluid-type.scss";
-@import "imports/media-queires.scss";
+@import "imports/media-queries.scss";
 
 /* Fonts
 /* ++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -41,6 +41,16 @@ html, body {
   box-sizing: border-box; 
   font-family: $font-primary-reg;
   @include fluid-type(16px, 19px);
+}
+
+.forge-container {
+  display: flex;
+  justify-content: center;
+}
+
+.forge-content {
+  max-width: 800px;
+  width: 100%;
 }
 
 /* Typography
@@ -88,16 +98,6 @@ h3 { @include fluid-type(16px, 18px); color: #848484; }
 p {
   font-family: $font-secondary-reg;
   letter-spacing: 0.1px;
-}
-
-.forge-container {
-  display: flex;
-  justify-content: center;
-}
-
-.forge-content {
-  max-width: 800px;
-  width: 100%;
 }
 
 /* Navigation Bar */
@@ -302,7 +302,7 @@ textarea, input, button { outline: none; }
   font-family: $font-primary-med;
 }
 
-/* All articles
+/* All Articles
 /* ++++++++++++++++++++++++++++++++++++++++++++++ */
 
 .forge-meta-article {
@@ -389,11 +389,10 @@ textarea, input, button { outline: none; }
 }
 
 .forge-pagintation .forge-pagination-page {
-  margin-left: auto;
+margin-left: auto;
 }
 
-.forge-pagintation .forge-pagination-navigation {
-}
+.forge-pagintation .forge-pagination-navigation {}
 
 .forge-pagintation .forge-pagination-navigation  .forge-pagination-navigation-older,
 .forge-pagintation .forge-pagination-navigation  .forge-pagination-navigation-newer  {
@@ -405,23 +404,15 @@ textarea, input, button { outline: none; }
   color: #000;
 }
 
-.forge-pagintation .forge-pagination-navigation  .forge-pagination-navigation-older {
-
-}
-
+.forge-pagintation .forge-pagination-navigation  .forge-pagination-navigation-older {}
 .forge-pagintation .forge-pagination-navigation  .forge-pagination-navigation-older-alt {
   border-right: 1px solid #acacac;
   padding-right: 4px;
   margin-right: 8px;
 }
 
-.forge-pagintation .forge-pagination-navigation  .forge-pagination-navigation-newer {
-
-}
-
-.forge-pagintation .forge-pagination-navigation  .forge-pagination-navigation-newer-alt {
-
-}
+.forge-pagintation .forge-pagination-navigation  .forge-pagination-navigation-newer {}
+.forge-pagintation .forge-pagination-navigation  .forge-pagination-navigation-newer-alt {}
 
 /* Utility
 /* ++++++++++++++++++++++++++++++++++++++++++++++ */
