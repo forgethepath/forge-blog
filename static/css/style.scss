@@ -1,8 +1,9 @@
 /* Fonts
 /* ++++++++++++++++++++++++++++++++++++++++++++++ */
 
-@import "type/fg.scss";
-@import "type/plex.scss";
+@import "imports/type/fg.scss";
+@import "imports/type/plex.scss";
+@import "imports/fluid-type.scss";
 
 $font-primary-reg: 'fg-book';
 $font-primary-med: 'fg-med';
@@ -66,13 +67,13 @@ h1 {
   color: #fff;
   margin-top: 26px;
 }
-h2 { font-size: 40px; font-weight: 100; }
-h3 { font-size: 18px; color: #848484; }
+h2 { @include fluid-type(30px, 40px); font-family: $font-primary-reg; }
+h3 { @include fluid-type(16px, 18px); color: #848484; }
 
 p {
   font-family: $font-secondary-reg;
   letter-spacing: 0.1px;
-  font-size: 19px;
+  @include fluid-type(16px, 19px);
 }
 
 .forge-container {
@@ -304,7 +305,7 @@ textarea, input, button { outline: none; }
   border: solid 3px #000;
   border-radius: 5px;
   padding: 2px 10px 2px 10px;
-  font-size: 15px;
+  @include fluid-type(13px, 15px);
   font-family: $font-primary-med;
   margin-left: 5px;
 }
@@ -332,7 +333,7 @@ textarea, input, button { outline: none; }
   color: #8a8a8a;
 }
 .forge-summary .forge-summary-date .forge-summary-month {
-  font-size: 48px;
+  @include fluid-type(40px, 48px);
   font-family: $font-primary-med;
 }
 
