@@ -16,11 +16,9 @@
         <p>
           {{ .Summary }}
         </p>
-        {{ if .Truncated }}
-          <nav class="forge-articles-readmore">
-            <a href="{{ .RelPermalink }}">Read More</a>
-          </nav>
-        {{ end }}
+        <nav class="forge-articles-readmore">
+          <a href="{{ .RelPermalink }}">Read More</a>
+        </nav>
       </article>
     {{ end }}
   </section>

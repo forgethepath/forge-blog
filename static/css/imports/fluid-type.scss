@@ -2,8 +2,8 @@
   $font-size-min,
   $font-size-max,
   $properties: font-size,
-  $vw-min: 320px,
-  $vw-max: 800px
+  $vw-min: $sm,
+  $vw-max: $lg
   ) {
 
   @if(

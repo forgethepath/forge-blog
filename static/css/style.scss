@@ -1,14 +1,29 @@
-/* Fonts
+/* Breakpoints
+/* ++++++++++++++++++++++++++++++++++++++++++++++ */
+
+$sm: 320px;
+$lg: 800px;
+
+/* Imports
 /* ++++++++++++++++++++++++++++++++++++++++++++++ */
 
 @import "imports/type/fg.scss";
 @import "imports/type/plex.scss";
 @import "imports/fluid-type.scss";
+@import "imports/media-queires.scss";
+
+/* Fonts
+/* ++++++++++++++++++++++++++++++++++++++++++++++ */
 
 $font-primary-reg: 'fg-book';
 $font-primary-med: 'fg-med';
 $font-primary-demi: 'fg-demi';
 $font-secondary-reg: 'plex-reg';
+
+/* Colors
+/* ++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
 
 /* Base 
 /* ++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -25,7 +40,7 @@ html, body {
   margin-bottom: 20px;
   box-sizing: border-box; 
   font-family: $font-primary-reg;
-  font-size: 19px;
+  @include fluid-type(16px, 19px);
 }
 
 /* Typography
@@ -73,7 +88,6 @@ h3 { @include fluid-type(16px, 18px); color: #848484; }
 p {
   font-family: $font-secondary-reg;
   letter-spacing: 0.1px;
-  @include fluid-type(16px, 19px);
 }
 
 .forge-container {

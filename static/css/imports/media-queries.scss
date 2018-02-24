@@ -1,0 +1,7 @@
+
+
+@mixin sm-screen {
+  @media (max-width: #{$sm}) {
+    @content;
+  }
+}
