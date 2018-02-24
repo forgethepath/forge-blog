@@ -27,7 +27,7 @@ yarn start
 It is possible to update content using the Netlify CMS or Hugo CLI. Pushing to master branch or editing through CMS will deploy site.
 
 ```
-forge.com/admin
+forgethepath.com/admin
 ```
 
 or
