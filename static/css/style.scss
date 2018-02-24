@@ -1,7 +1,7 @@
 /* Breakpoints
 /* ++++++++++++++++++++++++++++++++++++++++++++++ */
 
-$sm: 320px;
+$sm: 700px;
 $lg: 800px;
 
 /* Imports
@@ -113,10 +113,18 @@ p {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  @include sm-screen {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center
+  }
 }
 
 .forge-navigation > ul > li:first-child > a {
   padding-left:0px;
+  @include sm-screen {
+    padding-left: 10px;
+  }
 }
 
 .forge-navigation a, .forge-navigation a:visited {
@@ -230,7 +238,11 @@ p {
 
 .forge-navigation #forge-news-form {
   margin-left: auto;
+  @include sm-screen {
+    margin-left: 0;
+  }
 }
+
 
 .forge-navigation #forge-news {
   display: flex;
@@ -247,6 +259,10 @@ p {
   display: inline-block;
   font-family: $font-primary-reg;
   transition: ease-in-out, border-color .15s ease-in-out;
+  @include sm-screen {
+    font-size: 15px;
+    width: 247px;
+  }
 }
 
 .forge-navigation #forge-news label input::placeholder {
@@ -257,13 +273,8 @@ p {
   border-color: rgb(10, 10, 10);
 }
 
-.forge-navigation #forge-news label input:valid {
-
-}
-
-.forge-navigation #forge-news label input:required {
-  
-}
+.forge-navigation #forge-news label input:valid {}
+.forge-navigation #forge-news label input:required {}
 
 .forge-navigation #forge-news button {
   color: #fff;
@@ -275,6 +286,9 @@ p {
   cursor: pointer;
   padding: 12px 21px 12px 21px;
   font-family: $font-primary-reg;
+  @include sm-screen{
+    font-size: 16px;
+  }
 }
 
 textarea, input, button { outline: none; }
