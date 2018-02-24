@@ -53,6 +53,8 @@ html, body {
   width: 100%;
 }
 
+textarea, input, button { outline: none; }
+
 /* Typography
 /* ++++++++++++++++++++++++++++++++++++++++++++++ */
 
@@ -166,15 +168,14 @@ p {
   position: relative;
 }
 
-.forge-navigation .forge-tags-button {
-
-}
+.forge-navigation .forge-tags-button {}
 
 .forge-navigation .forge-tags .forge-tags-dropdown {
   min-width: 152px;
   display: inline-block;
   position: absolute;
-  left:0px;
+  left:62%;
+  transform: translate(-62%, 0);
   top: 44px;
   background-color: #fff;
   border: 1px solid #B9B9B9;
@@ -189,7 +190,8 @@ p {
   display: block;
   position: absolute;
   top:-6px;
-  left: 22px;
+  left:50%;
+  transform: translate(-50%, 0);
   width: 10px;
   height: 10px; 
   background: #FFFFFF;
@@ -290,8 +292,6 @@ p {
     font-size: 16px;
   }
 }
-
-textarea, input, button { outline: none; }
 
 /* List of Articles
 /* ++++++++++++++++++++++++++++++++++++++++++++++ */
