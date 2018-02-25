@@ -1,6 +1,6 @@
 <nav class="forge-pagintation">
   <div class="forge-pagination-navigation">
-    {{ if (.Paginator.HasNext) }}
+    {{ if .Paginator.HasNext }}
       <a class="forge-pagination-navigation-older {{ if and .Paginator.HasNext .Paginator.HasPrev }}forge-pagination-navigation-older-alt{{ end }}" href="{{ .Paginator.Next.URL }}">
           Older {{ if not .Paginator.HasPrev }}Articles{{ end }}
       </a>
@@ -11,7 +11,9 @@
       </a>
     {{ end }}
   </div>
-  <div class="forge-pagination-page">
-    Page&nbsp;&nbsp;{{ .Paginator.PageNumber }} &mdash; {{ .Paginator.TotalPages }}
-  </div>
+  {{ if or .Paginator.HasNext .Paginator.HasPrev }}
+    <div class="forge-pagination-page">
+      Page&nbsp;&nbsp;{{ .Paginator.PageNumber }} &mdash; {{ .Paginator.TotalPages }}
+    </div>
+  {{ end }}
 </nav>
