@@ -28,10 +28,11 @@ $font-secondary-reg: 'plex-reg';
 /* Base 
 /* ++++++++++++++++++++++++++++++++++++++++++++++ */
 
-html {
-  margin-left: calc(100vw - 100%);
-  margin-right: 0;
-} // stops scroll bar from shifting content
+@media screen and (min-width: 900px) {
+  html {
+    margin-left: calc(100vw - 100%);
+  } // stops scroll bar from shifting content
+}
 
 html, body {
   padding: 0;
