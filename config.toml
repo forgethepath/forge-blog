@@ -2,6 +2,8 @@ baseURL = "http://forge-blog.netlify.com/"
 languageCode = "en-us"
 title = "Forge The Path"
 enableRobotsTXT = true
+pygmentsCodefences="True"
+pygmentsUseClasses="True"
 
 [author]
   name = "Forge"

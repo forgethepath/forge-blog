@@ -10,6 +10,7 @@ $lg: 800px;
 @import "imports/type/fg.scss";
 @import "imports/type/plex.scss";
 @import "imports/fluid-type.scss";
+@import "imports/syntax-hl.scss";
 @import "imports/media-queries.scss";
 
 /* Fonts
@@ -59,6 +60,12 @@ html, body {
 textarea, input, button, a { 
   outline: none; 
   -webkit-tap-highlight-color: transparent;
+}
+
+tt, code, kbd, samp, pre {
+  font-family: Menlo,Monaco,Consolas,"Courier New";
+  font-size: 15px;
+  white-space: pre-wrap;
 }
 
 /* Typography
