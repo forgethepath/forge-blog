@@ -1,5 +1,5 @@
 {{ define "main" }}
-  {{ $paginator := .Paginate ((where .Site.Pages "Kind" "page").GroupByDate "2006") -}}
+  {{ $paginator := .Paginate ((where .Site.Pages "Kind" "page").GroupByDate "2006") 100 -}}
   <section class="forge-summary">
     <ul>
       {{- range $paginator.PageGroups }}
