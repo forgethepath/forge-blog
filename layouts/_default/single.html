@@ -17,8 +17,20 @@
       </header>
       {{ .Content }}
     </article>
-    <nav class="forge-article-back">
-      <a href="{{.Site.BaseURL}}{{.Section}}">Back to {{.Section}}</a>
+    <nav class="forge-article-navigation">
+      {{ if .PrevInSection }}
+        <a class="{{ if and .PrevInSection .NextInSection }}forge-article-navigation-older-alt{{ end }}" href="{{.PrevInSection.Permalink}}">
+          Older {{ if not .NextInSection }}Articles{{ end }}
+        </a>
+      {{ end }}
+      {{ if .NextInSection }}
+        <a class="{{ if and .PrevInSection .NextInSection }}forge-article-navigation-newer-alt{{ end }}" href="{{.NextInSection.Permalink}}">
+          Newer {{ if not .PrevInSection }}Articles{{ end }}
+        </a>
+      {{ end }}
+      <a class="forge-article-navigation-back" href="{{.Site.BaseURL}}">
+        Back to Articles
+      </a>
     </nav>
   </section>
 {{ end }}

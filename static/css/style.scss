@@ -68,6 +68,15 @@ tt, code, kbd, samp, pre {
   white-space: pre-wrap;
 }
 
+figure {
+  margin: 0;
+}
+
+img {
+  width: 100%; 
+  height: auto
+}
+
 /* Typography
 /* ++++++++++++++++++++++++++++++++++++++++++++++ */
 
@@ -97,16 +106,6 @@ a {
 article, aside, footer, header, nav, section { display: block; }
 
 h1, h2, h3, h4, h5, h6 { font-weight: normal; text-decoration: none; margin:0; }
-h1 {
-  font-family: "FONTSPRING DEMO - Franklin Gothic FS MED";
-  text-transform: uppercase;
-  font-size: 184px;
-  line-height: 143px;
-  // background-image: url("https://c1.staticflickr.com/5/4124/5209203814_879375decc_b.jpg");
-  background-color: #4be25f;
-  color: #fff;
-  margin-top: 26px;
-}
 h2 { @include fluid-type(30px, 40px); font-family: $font-primary-reg; }
 h3 { @include fluid-type(16px, 18px); color: #848484; }
 
@@ -329,9 +328,29 @@ p {
 /* Single Article
 /* ++++++++++++++++++++++++++++++++++++++++++++++ */
 
-.forge-article nav.forge-article-back a {
-  font-family: $font-primary-med;
+.forge-article nav.forge-article-navigation {
+  display: flex;
 }
+
+.forge-article nav.forge-article-navigation a {
+  font-family: $font-primary-demi;
+  text-transform: uppercase;
+  color: #8d8d8d;
+  font-size: 16px;
+  display: inline-block;
+}
+
+.forge-article nav.forge-article-navigation .forge-article-navigation-older-alt {
+  border-right: 1px solid #acacac;
+  padding-right: 8px;
+  margin-right: 8px;
+}
+.forge-article nav.forge-article-navigation .forge-article-navigation-older-newer {}
+
+.forge-article nav.forge-article-navigation .forge-article-navigation-back {
+  margin-left: auto;
+}
+
 
 /* All Articles
 /* ++++++++++++++++++++++++++++++++++++++++++++++ */

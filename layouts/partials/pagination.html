@@ -2,7 +2,7 @@
   <div class="forge-pagination-navigation">
     {{ if .Paginator.HasNext }}
       <a class="forge-pagination-navigation-older {{ if and .Paginator.HasNext .Paginator.HasPrev }}forge-pagination-navigation-older-alt{{ end }}" href="{{ .Paginator.Next.URL }}">
-          Older {{ if not .Paginator.HasPrev }}Articles{{ end }}
+        Older {{ if not .Paginator.HasPrev }}Articles{{ end }}
       </a>
     {{ end }}
     {{ if .Paginator.HasPrev }}
