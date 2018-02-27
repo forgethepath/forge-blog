@@ -20,12 +20,12 @@
     <nav class="forge-article-navigation">
       {{ if .PrevInSection }}
         <a class="{{ if and .PrevInSection .NextInSection }}forge-article-navigation-older-alt{{ end }}" href="{{.PrevInSection.Permalink}}">
-          Older {{ if not .NextInSection }}Articles{{ end }}
+          Older {{ if not .NextInSection }}Article{{ end }}
         </a>
       {{ end }}
       {{ if .NextInSection }}
         <a class="{{ if and .PrevInSection .NextInSection }}forge-article-navigation-newer-alt{{ end }}" href="{{.NextInSection.Permalink}}">
-          Newer {{ if not .PrevInSection }}Articles{{ end }}
+          Newer {{ if not .PrevInSection }}Article{{ end }}
         </a>
       {{ end }}
       <a class="forge-article-navigation-back" href="{{.Site.BaseURL}}">
