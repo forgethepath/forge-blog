@@ -19,7 +19,10 @@ $lg: 800px;
 $font-primary-reg: 'fg-book';
 $font-primary-med: 'fg-med';
 $font-primary-demi: 'fg-demi';
+$font-secondary-light: 'plex-light';
 $font-secondary-reg: 'plex-reg';
+$font-secondary-italic: 'plex-italic';
+$font-secondary-semi: 'plex-semi';
 
 /* Colors
 /* ++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -69,7 +72,7 @@ tt, code, kbd, samp, pre {
 }
 
 ul, li {
-  font-family: "IBM Plex Serif"
+  font-family: $font-secondary-reg;
 }
 
 blockquote {
@@ -81,13 +84,12 @@ blockquote p {
   padding-left: 8px;
   color: #3b3b3b;
   font-size: 22px;
-  font-family: "IBM Plex serif";
-  font-weight: bold;
+  font-family: $font-secondary-semi;
 }
 
 figure {
   margin: 0;
-  font-family: "IBM Plex Serif";
+  font-family: $font-secondary-italic;
   font-style: italic;
   font-size:16px;
   color: #777;
@@ -126,9 +128,10 @@ a {
 *, *:before, *:after { box-sizing: inherit; } 
 article, aside, footer, header, nav, section { display: block; }
 
-h1, h2, h3, h4, h5, h6 { font-weight: normal; text-decoration: none; margin:0; }
-h2 { @include fluid-type(30px, 40px); font-family: $font-primary-reg; }
+h1, h2, h3, h4, h5, h6 { font-weight: normal; text-decoration: none; margin:0; font-family: $font-primary-reg;}
+h2 { @include fluid-type(30px, 40px); }
 h3 { @include fluid-type(16px, 18px); color: #848484; }
+h4 { @include fluid-type(21px, 24px); }
 
 p {
   font-family: $font-secondary-reg;
@@ -433,6 +436,7 @@ p {
   align-items: center;
   padding-top: 4px;
   padding-bottom: 4px;
+  font-family: $font-primary-reg;
  }
 
 .forge-summary .forge-summary-article li:first-child {

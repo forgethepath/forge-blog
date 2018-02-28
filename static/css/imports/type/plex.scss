@@ -1,6 +1,27 @@
 @font-face {
+  font-family: 'plex-light';
+  src: url('../fonts/opensource/IBMPlexSerif-Light-Latin1.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'plex-reg';
   src: url('../fonts/opensource/IBMPlexSerif-Regular-Latin1.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'plex-italic';
+  src: url('../fonts/opensource/IBMPlexSerif-Italic-Latin1.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'plex-semi';
+  src: url('../fonts/opensource/IBMPlexSerif-SemiBold-Latin1.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
