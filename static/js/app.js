@@ -8,6 +8,14 @@ if (window.netlifyIdentity) {
   })
 };
 
+const forge_back = document.querySelector('.forge-article-navigation-back');
+if ((forge_back) 
+  && (document.referrer !="") 
+  && (document.referrer.indexOf(window.location.host) !== -1)) {
+    forge_back.href = document.referrer;
+};
+
+
 const newsletter = document.getElementById("forge-news");
 newsletter.addEventListener("submit", (event) => {  
   let form = event.target;
