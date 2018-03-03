@@ -355,6 +355,13 @@ html, body {
     html, body {
       margin-top: 8px; } }
 
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
+
+article, aside, footer, header, nav, section {
+  display: block; }
+
 .forge-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -386,15 +393,23 @@ blockquote p {
   border-left: 4px solid #949494;
   padding-left: 8px;
   color: #3b3b3b;
-  font-size: 22px;
+  font-size: 18px;
   font-family: "plex-semi"; }
+  @media screen and (min-width: 700px) {
+    blockquote p {
+      font-size: calc(18px + 4 * (100vw - 700px) / 100); } }
+  @media screen and (min-width: 800px) {
+    blockquote p {
+      font-size: 22px; } }
 
 figure {
-  margin: 0;
-  font-family: "plex-italic";
+  margin: 0; }
+
+figure h4 {
   font-style: italic;
+  color: #777;
   font-size: 16px;
-  color: #777; }
+  font-family: "plex-italic"; }
 
 img {
   width: 100%;
@@ -413,13 +428,6 @@ a {
       color: black; }
     a:active, a:focus {
       color: black; }
-
-*, *:before, *:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit; }
-
-article, aside, footer, header, nav, section {
-  display: block; }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;

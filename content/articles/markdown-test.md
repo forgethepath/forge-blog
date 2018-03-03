@@ -75,10 +75,11 @@ Reference-style:
 
 [logo]: http://shuttermuse.com/wp-content/uploads/2014/01/Hallets-peak-Peyton-Hale-graduated-filter.jpg "Logo Title Text 2"
 
-Name    | Age
---------|------
-Bob     | 27
-Alice   | 23
+Name    | Age  | Name   | Age  |
+--------|------|--------|------|
+Bob     | 27   | Bob    | 27   |
+Alice   | 23   | Bob    | 27   |
+Name    | Age  | Name   | Age  |
 
 Colons can be used to align columns.
 

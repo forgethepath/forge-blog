@@ -12,6 +12,7 @@ $lg: 800px;
 @import "imports/fluid-type.scss";
 @import "imports/syntax-hl.scss";
 @import "imports/media-queries.scss";
+@import "imports/tables.scss";
 
 /* Fonts
 /* ++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -38,6 +39,7 @@ $font-secondary-semi: 'plex-semi';
   } // stops scroll bar from shifting content
 }
 
+
 html, body {
   padding: 0;
   margin-top: 20px;
@@ -49,6 +51,9 @@ html, body {
     margin-top: 8px;
   }
 }
+
+*, *:before, *:after { box-sizing: inherit; } 
+article, aside, footer, header, nav, section { display: block; }
 
 .forge-container {
   display: flex;
@@ -83,16 +88,19 @@ blockquote p {
   border-left: 4px solid #949494;
   padding-left: 8px;
   color: #3b3b3b;
-  font-size: 22px;
+  @include fluid-type(18px, 22px);
   font-family: $font-secondary-semi;
 }
 
 figure {
   margin: 0;
-  font-family: $font-secondary-italic;
+}
+
+figure h4 {
   font-style: italic;
-  font-size:16px;
   color: #777;
+  font-size: 16px;
+  font-family: $font-secondary-italic;
 }
 
 img {
@@ -123,10 +131,6 @@ a {
   @include links(rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0));
   outline:0;
 }
-
-
-*, *:before, *:after { box-sizing: inherit; } 
-article, aside, footer, header, nav, section { display: block; }
 
 h1, h2, h3, h4, h5, h6 { font-weight: normal; text-decoration: none; margin:0; font-family: $font-primary-reg;}
 h2 { @include fluid-type(30px, 40px); }
