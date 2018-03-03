@@ -10,10 +10,20 @@ if (window.netlifyIdentity) {
 
 const forge_back = document.querySelector('.forge-article-navigation-back');
 if ((forge_back) 
+  && (document.referrer.includes(window.location.host))
   && (document.referrer !="") 
-  && (document.referrer.includes('page'))
-  && (document.referrer.indexOf(window.location.host) !== -1)) {
+  && ((document.referrer.includes('page')) 
+     || (document.referrer.includes('summary')) 
+     || (document.referrer.includes('tags'))
+    )) {
     forge_back.href = document.referrer;
+    if (document.referrer.includes('page')) {
+      forge_back.innerText = "BACK TO ARTICLES";
+    } else if (document.referrer.includes('summary')) {
+      forge_back.innerText = "BACK TO SUMMARY";
+    } else if (document.referrer.includes('tags')) {
+      forge_back.innerText = "BACK TO TAGS";
+    }   
 };
 
 const newsletter = document.getElementById("forge-news");

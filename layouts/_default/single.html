@@ -28,7 +28,7 @@
           Newer {{ if not .PrevInSection }}Article{{ end }}
         </a>
       {{ end }}
-      <a class="forge-article-navigation-back" href="{{.Site.BaseURL}}">
+      <a class="forge-article-navigation-back" href="{{.Site.BaseURL}}{{.Section}}">
         Back to Articles
       </a>
     </nav>
