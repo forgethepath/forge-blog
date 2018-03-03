@@ -11,6 +11,7 @@ if (window.netlifyIdentity) {
 const forge_back = document.querySelector('.forge-article-navigation-back');
 if ((forge_back) 
   && (document.referrer !="") 
+  && (document.referrer.includes('page'))
   && (document.referrer.indexOf(window.location.host) !== -1)) {
     forge_back.href = document.referrer;
 };
