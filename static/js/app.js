@@ -15,7 +15,6 @@ if ((forge_back)
     forge_back.href = document.referrer;
 };
 
-
 const newsletter = document.getElementById("forge-news");
 newsletter.addEventListener("submit", (event) => {  
   let form = event.target;
