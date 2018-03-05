@@ -369,8 +369,8 @@ html, body {
   font-size: 16px; }
   @media screen and (min-width: 700px) {
     html, body {
-      font-size: calc(16px + 3 * (100vw - 700px) / 100); } }
-  @media screen and (min-width: 800px) {
+      font-size: calc(16px + 3 * (100vw - 700px) / 172); } }
+  @media screen and (min-width: 872px) {
     html, body {
       font-size: 19px; } }
   @media screen and (max-width: 700px) {
@@ -393,7 +393,7 @@ article, aside, footer, header, nav, section {
           justify-content: center; }
 
 .forge-content {
-  max-width: 800px;
+  max-width: 872px;
   width: 100%; }
 
 textarea, input, button, a {
@@ -419,8 +419,8 @@ blockquote p {
   font-family: "plex-semi"; }
   @media screen and (min-width: 700px) {
     blockquote p {
-      font-size: calc(18px + 4 * (100vw - 700px) / 100); } }
-  @media screen and (min-width: 800px) {
+      font-size: calc(18px + 4 * (100vw - 700px) / 172); } }
+  @media screen and (min-width: 872px) {
     blockquote p {
       font-size: 22px; } }
 
@@ -462,21 +462,26 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "fg-book"; }
 
 h2 {
-  font-size: 30px; }
+  font-size: 30px;
+  color: #2496e2; }
   @media screen and (min-width: 700px) {
     h2 {
-      font-size: calc(30px + 10 * (100vw - 700px) / 100); } }
-  @media screen and (min-width: 800px) {
+      font-size: calc(30px + 10 * (100vw - 700px) / 172); } }
+  @media screen and (min-width: 872px) {
     h2 {
       font-size: 40px; } }
+  h2 a {
+    color: #2496e2; }
+  h2 a:visited {
+    color: #2496e2; }
 
 h3 {
   font-size: 16px;
   color: #848484; }
   @media screen and (min-width: 700px) {
     h3 {
-      font-size: calc(16px + 2 * (100vw - 700px) / 100); } }
-  @media screen and (min-width: 800px) {
+      font-size: calc(16px + 2 * (100vw - 700px) / 172); } }
+  @media screen and (min-width: 872px) {
     h3 {
       font-size: 18px; } }
 
@@ -484,8 +489,8 @@ h4 {
   font-size: 21px; }
   @media screen and (min-width: 700px) {
     h4 {
-      font-size: calc(21px + 3 * (100vw - 700px) / 100); } }
-  @media screen and (min-width: 800px) {
+      font-size: calc(21px + 3 * (100vw - 700px) / 172); } }
+  @media screen and (min-width: 872px) {
     h4 {
       font-size: 24px; } }
 
@@ -493,8 +498,8 @@ h5 {
   font-size: 17px; }
   @media screen and (min-width: 700px) {
     h5 {
-      font-size: calc(17px + 2 * (100vw - 700px) / 100); } }
-  @media screen and (min-width: 800px) {
+      font-size: calc(17px + 2 * (100vw - 700px) / 172); } }
+  @media screen and (min-width: 872px) {
     h5 {
       font-size: 19px; } }
 
@@ -538,17 +543,21 @@ p {
   padding: 16px 10px 13px 10px;
   text-transform: uppercase;
   font-family: "fg-demi";
-  font-size: 16px; }
+  font-size: 16px;
+  -webkit-transition: ease-in-out, color .10s ease-in-out;
+  transition: ease-in-out, color .10s ease-in-out; }
   @media screen and (max-width: 700px) {
     .forge-navigation a, .forge-navigation a:visited {
       padding-left: 5px;
       padding-right: 5px; } }
 
 .forge-navigation a.active {
-  color: #000; }
+  color: #2496e2; }
+  .forge-navigation a.active:hover {
+    color: #2496e2; }
 
 .forge-navigation a:hover {
-  color: #000; }
+  color: #2496e2; }
 
 .forge-navigation .forge-tags .utiltiy-arrow-down {
   width: 0;
@@ -561,7 +570,7 @@ p {
   margin-left: 4px; }
 
 .forge-navigation a:hover .utiltiy-arrow-down {
-  border-top: #000 6px solid; }
+  border-top: #2496e2 6px solid; }
 
 /* Navigation Bar: Tags Dropdown */
 /* ++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -626,11 +635,11 @@ p {
 
 .forge-navigation .forge-tags .forge-tags-dropdown li a .forge-tags-dropdown-coutner {
   color: #fff;
-  border: 1px solid #383838;
-  background-color: #6d6d6d;
+  border: 1px solid #1b7fc2;
+  background-color: #80b7dc;
   border-radius: 4px;
   margin-left: auto;
-  padding: 0px 5px 0px 5px;
+  padding: 1px 5px 0px 5px;
   font-size: 14px; }
 
 .forge-navigation .forge-tags .forge-tags-dropdown li a .forge-tags-dropdown-tag {
@@ -687,9 +696,9 @@ p {
 .forge-navigation #forge-news button {
   color: #fff;
   border-radius: 4px;
-  border: solid 1px #000;
+  border: solid 1px #1b7fc2;
   font-size: 19px;
-  background-color: #000;
+  background-color: #2496e2;
   border-radius: 0px 4px 4px 0px;
   cursor: pointer;
   padding: 12px 21px 12px 21px;
@@ -705,10 +714,12 @@ p {
 
 .forge-articles article nav.forge-articles-readmore a {
   color: #717171;
-  font-family: "fg-med"; }
+  font-family: "fg-med";
+  -webkit-transition: ease-in-out, color .10s ease-in-out;
+  transition: ease-in-out, color .10s ease-in-out; }
 
 .forge-articles article nav.forge-articles-readmore a:hover {
-  color: #000; }
+  color: #2496e2; }
 
 /* Single Article
 /* ++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -752,18 +763,24 @@ p {
   margin-left: auto; }
 
 .forge-meta-article .forge-meta-article-tag {
-  border: solid 3px #000;
+  color: #585858;
+  border: solid 3px #2496e2;
   border-radius: 5px;
   padding: 2px 10px 2px 10px;
   font-size: 13px;
   font-family: "fg-med";
-  margin-left: 5px; }
+  margin-left: 5px;
+  -webkit-transition: ease-in-out, background-color .10s ease-in-out;
+  transition: ease-in-out, background-color .10s ease-in-out; }
   @media screen and (min-width: 700px) {
     .forge-meta-article .forge-meta-article-tag {
-      font-size: calc(13px + 2 * (100vw - 700px) / 100); } }
-  @media screen and (min-width: 800px) {
+      font-size: calc(13px + 2 * (100vw - 700px) / 172); } }
+  @media screen and (min-width: 872px) {
     .forge-meta-article .forge-meta-article-tag {
       font-size: 15px; } }
+  .forge-meta-article .forge-meta-article-tag:hover {
+    background-color: #2496e2;
+    color: #fff; }
 
 /* Summary
 /* ++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -789,11 +806,12 @@ p {
 
 .forge-summary .forge-summary-date .forge-summary-month {
   font-size: 40px;
-  font-family: "fg-med"; }
+  font-family: "fg-med";
+  color: #2496e2; }
   @media screen and (min-width: 700px) {
     .forge-summary .forge-summary-date .forge-summary-month {
-      font-size: calc(40px + 8 * (100vw - 700px) / 100); } }
-  @media screen and (min-width: 800px) {
+      font-size: calc(40px + 8 * (100vw - 700px) / 172); } }
+  @media screen and (min-width: 872px) {
     .forge-summary .forge-summary-date .forge-summary-month {
       font-size: 48px; } }
 

@@ -2,7 +2,7 @@
 /* ++++++++++++++++++++++++++++++++++++++++++++++ */
 
 $sm: 700px;
-$lg: 800px;
+$lg: 872px;
 
 /* Fonts
 /* ++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -18,6 +18,9 @@ $font-secondary-semi: 'plex-semi';
 /* Colors
 /* ++++++++++++++++++++++++++++++++++++++++++++++ */
 
+$color-primary: #2496e2;
+$color-primary-border: #1b7fc2;
+// $color-grayscale: 
 /* Imports
 /* ++++++++++++++++++++++++++++++++++++++++++++++ */
 
@@ -59,7 +62,7 @@ article, aside, footer, header, nav, section { display: block; }
 }
 
 .forge-content {
-  max-width: 800px;
+  max-width: $lg;
   width: 100%;
 }
 
@@ -136,7 +139,16 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6 { font-weight: normal; text-decoration: none; margin:0; font-family: $font-primary-reg;}
-h2 { @include fluid-type(30px, 40px); }
+h2 { 
+  @include fluid-type(30px, 40px);
+  color: $color-primary;
+  & a {
+    color: $color-primary;
+  }
+  & a:visited {
+    color: $color-primary;
+  }
+}
 h3 { @include fluid-type(16px, 18px); color: #848484; }
 h4 { @include fluid-type(21px, 24px); }
 h5 { @include fluid-type(17px, 19px); }
@@ -180,6 +192,7 @@ p {
   text-transform: uppercase;
   font-family: $font-primary-demi;
   font-size: 16px;
+  transition: ease-in-out, color .10s ease-in-out;
   @include sm-screen {
     padding-left: 5px;
     padding-right: 5px;
@@ -187,11 +200,15 @@ p {
 }
 
 .forge-navigation a.active {
-  color: #000;
+  color: $color-primary;
+  &:hover {
+    color: $color-primary;
+  }
 }
 
 .forge-navigation a:hover {
-  color: #000;
+  color: $color-primary;
+
 }
 
 .forge-navigation .forge-tags .utiltiy-arrow-down {
@@ -205,7 +222,7 @@ p {
   margin-left: 4px;
 }
 .forge-navigation a:hover .utiltiy-arrow-down {
-  border-top: #000 6px solid
+  border-top: $color-primary 6px solid
 
 }
 
@@ -269,11 +286,11 @@ p {
 
 .forge-navigation .forge-tags .forge-tags-dropdown li a .forge-tags-dropdown-coutner {
   color: #fff;
-  border: 1px solid #383838;
-  background-color: #6d6d6d;
+  border: 1px solid $color-primary-border;
+  background-color: #80b7dc;
   border-radius: 4px;
   margin-left:auto;
-  padding: 0px 5px 0px 5px;
+  padding: 1px 5px 0px 5px;
   font-size: 14px;
 }
 
@@ -334,9 +351,9 @@ p {
 .forge-navigation #forge-news button {
   color: #fff;
   border-radius: 4px;
-  border: solid 1px #000;
+  border: solid 1px $color-primary-border;
   font-size: 19px;
-  background-color: #000;
+  background-color: $color-primary;
   border-radius: 0px 4px 4px 0px;
   cursor: pointer;
   padding: 12px 21px 12px 21px;
@@ -356,10 +373,11 @@ p {
 .forge-articles article nav.forge-articles-readmore a {
   color: #717171;
   font-family: $font-primary-med;
+  transition: ease-in-out, color .10s ease-in-out;
 }
 
 .forge-articles article nav.forge-articles-readmore a:hover {
-  color: #000;
+  color: $color-primary;
 }
 
 /* Single Article
@@ -407,12 +425,18 @@ p {
 }
 
 .forge-meta-article .forge-meta-article-tag {
-  border: solid 3px #000;
+  color: #585858;
+  border: solid 3px $color-primary;
   border-radius: 5px;
   padding: 2px 10px 2px 10px;
   @include fluid-type(13px, 15px);
   font-family: $font-primary-med;
   margin-left: 5px;
+  transition: ease-in-out, background-color .10s ease-in-out;
+  &:hover {
+    background-color: $color-primary;
+    color: #fff;
+  }
 }
 
 /* Summary
@@ -440,6 +464,7 @@ p {
 .forge-summary .forge-summary-date .forge-summary-month {
   @include fluid-type(40px, 48px);
   font-family: $font-primary-med;
+  color: $color-primary;
 }
 
 .forge-summary .forge-summary-article li {
