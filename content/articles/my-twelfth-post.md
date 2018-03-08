@@ -1,7 +1,7 @@
 ---
 title: "My Twelfth Post"
 date: 2018-02-16T20:05:57-07:00
-draft: true
+draft: false
 tags:
   - Programming
 ---

@@ -1,7 +1,7 @@
 ---
 title: "My Thirteenth Post"
 date: 2018-02-16T20:06:06-07:00
-draft: true
+draft: false
 tags:
   - Linux
 ---
