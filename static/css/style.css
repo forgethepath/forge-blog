@@ -79,16 +79,13 @@
 
 /* Background */
 .chroma {
-  color: #f8f8f2;
-  background-color: #002331;
+  background-color: #ffffff;
+  border: solid 1px #eaeaea;
   border-radius: 4px;
-  padding: 12px; }
+  padding: 20px 10px 20px 10px;
+  border-bottom: solid 3px #e4e4e4; }
 
 /* Error */
-.chroma .err {
-  color: #960050;
-  background-color: #1e0010; }
-
 /* LineTableTD */
 .chroma .lntd {
   vertical-align: top;
@@ -102,7 +99,7 @@
   padding: 0;
   margin: 0;
   border: 0;
-  width: 100%;
+  width: auto;
   overflow: auto;
   display: block; }
 
@@ -110,7 +107,7 @@
 .chroma .hl {
   display: block;
   width: 100%;
-  background-color: #ffffcc; }
+  background-color: #d3f8ff; }
 
 /* LineNumbersTable */
 .chroma .lnt {
@@ -125,203 +122,135 @@
 
 /* Keyword */
 .chroma .k {
-  color: #66d9ef; }
+  color: #2496e2; }
 
 /* KeywordConstant */
 .chroma .kc {
-  color: #66d9ef; }
+  color: #2496e2; }
 
 /* KeywordDeclaration */
 .chroma .kd {
-  color: #66d9ef; }
+  color: #2496e2; }
 
 /* KeywordNamespace */
 .chroma .kn {
-  color: #f92672; }
+  color: #2496e2; }
 
 /* KeywordPseudo */
 .chroma .kp {
-  color: #66d9ef; }
+  color: #2496e2; }
 
 /* KeywordReserved */
 .chroma .kr {
-  color: #66d9ef; }
+  color: #2496e2; }
 
 /* KeywordType */
 .chroma .kt {
-  color: #66d9ef; }
-
-/* NameAttribute */
-.chroma .na {
-  color: #a6e22e; }
+  color: #2b91af; }
 
 /* NameClass */
 .chroma .nc {
-  color: #a6e22e; }
-
-/* NameConstant */
-.chroma .no {
-  color: #66d9ef; }
-
-/* NameDecorator */
-.chroma .nd {
-  color: #a6e22e; }
-
-/* NameException */
-.chroma .ne {
-  color: #a6e22e; }
-
-/* NameFunction */
-.chroma .nf {
-  color: #a6e22e; }
-
-/* NameOther */
-.chroma .nx {
-  color: #a6e22e; }
-
-/* NameTag */
-.chroma .nt {
-  color: #f92672; }
-
-/* Literal */
-.chroma .l {
-  color: #ae81ff; }
-
-/* LiteralDate */
-.chroma .ld {
-  color: #00d9ff; }
+  color: #2b91af; }
 
 /* LiteralString */
 .chroma .s {
-  color: #00d9ff; }
+  color: #ff0062; }
 
 /* LiteralStringAffix */
 .chroma .sa {
-  color: #00d9ff; }
+  color: #ff0062; }
 
 /* LiteralStringBacktick */
 .chroma .sb {
-  color: #00d9ff; }
+  color: #ff0062; }
 
 /* LiteralStringChar */
 .chroma .sc {
-  color: #00d9ff; }
+  color: #ff0062; }
 
 /* LiteralStringDelimiter */
 .chroma .dl {
-  color: #00d9ff; }
+  color: #ff0062; }
 
 /* LiteralStringDoc */
 .chroma .sd {
-  color: #00d9ff; }
+  color: #ff0062; }
 
 /* LiteralStringDouble */
 .chroma .s2 {
-  color: #00d9ff; }
+  color: #ff0062; }
 
 /* LiteralStringEscape */
 .chroma .se {
-  color: #ae81ff; }
+  color: #ff0062; }
 
 /* LiteralStringHeredoc */
 .chroma .sh {
-  color: #00d9ff; }
+  color: #ff0062; }
 
 /* LiteralStringInterpol */
 .chroma .si {
-  color: #00d9ff; }
+  color: #ff0062; }
 
 /* LiteralStringOther */
 .chroma .sx {
-  color: #00d9ff; }
+  color: #ff0062; }
 
 /* LiteralStringRegex */
 .chroma .sr {
-  color: #00d9ff; }
+  color: #ff0062; }
 
 /* LiteralStringSingle */
 .chroma .s1 {
-  color: #00d9ff; }
+  color: #ff0062; }
 
 /* LiteralStringSymbol */
 .chroma .ss {
-  color: #00d9ff; }
-
-/* LiteralNumber */
-.chroma .m {
-  color: #ae81ff; }
-
-/* LiteralNumberBin */
-.chroma .mb {
-  color: #ae81ff; }
-
-/* LiteralNumberFloat */
-.chroma .mf {
-  color: #ae81ff; }
-
-/* LiteralNumberHex */
-.chroma .mh {
-  color: #ae81ff; }
-
-/* LiteralNumberInteger */
-.chroma .mi {
-  color: #ae81ff; }
-
-/* LiteralNumberIntegerLong */
-.chroma .il {
-  color: #ae81ff; }
-
-/* LiteralNumberOct */
-.chroma .mo {
-  color: #ae81ff; }
-
-/* Operator */
-.chroma .o {
-  color: #f92672; }
+  color: #ff0062; }
 
 /* OperatorWord */
 .chroma .ow {
-  color: #f92672; }
+  color: #2496e2; }
 
 /* Comment */
 .chroma .c {
-  color: #75715e; }
+  color: #008000; }
 
 /* CommentHashbang */
 .chroma .ch {
-  color: #75715e; }
+  color: #008000; }
 
 /* CommentMultiline */
 .chroma .cm {
-  color: #75715e; }
+  color: #008000; }
 
 /* CommentSingle */
 .chroma .c1 {
-  color: #75715e; }
+  color: #008000; }
 
 /* CommentSpecial */
 .chroma .cs {
-  color: #75715e; }
+  color: #008000; }
 
 /* CommentPreproc */
 .chroma .cp {
-  color: #75715e; }
+  color: #2496e2; }
 
 /* CommentPreprocFile */
 .chroma .cpf {
-  color: #75715e; }
-
-/* GenericDeleted */
-.chroma .gd {
-  color: #f92672; }
+  color: #2496e2; }
 
 /* GenericEmph */
 .chroma .ge {
   font-style: italic; }
 
-/* GenericInserted */
-.chroma .gi {
-  color: #a6e22e; }
+/* GenericHeading */
+.chroma .gh {
+  font-weight: bold; }
+
+/* GenericPrompt */
+.chroma .gp {
+  font-weight: bold; }
 
 /* GenericStrong */
 .chroma .gs {
@@ -329,7 +258,7 @@
 
 /* GenericSubheading */
 .chroma .gu {
-  color: #75715e; }
+  font-weight: bold; }
 
 table {
   width: 100%;
@@ -346,9 +275,9 @@ th, td {
   padding: 6px; }
 
 th {
-  background-color: #353535;
+  background-color: #2496e2;
   color: #fff;
-  border: 1px solid #747474; }
+  border: 1px solid #1b7fc2; }
 
 tr:nth-child(even) {
   background-color: #f7f7f7; }
@@ -369,8 +298,8 @@ html, body {
   font-size: 16px; }
   @media screen and (min-width: 700px) {
     html, body {
-      font-size: calc(16px + 3 * (100vw - 700px) / 172); } }
-  @media screen and (min-width: 872px) {
+      font-size: calc(16px + 3 * (100vw - 700px) / 124); } }
+  @media screen and (min-width: 824px) {
     html, body {
       font-size: 19px; } }
   @media screen and (max-width: 700px) {
@@ -393,7 +322,7 @@ article, aside, footer, header, nav, section {
           justify-content: center; }
 
 .forge-content {
-  max-width: 872px;
+  max-width: 824px;
   width: 100%; }
 
 textarea, input, button, a {
@@ -412,15 +341,15 @@ blockquote {
   margin-left: 22px; }
 
 blockquote p {
-  border-left: 4px solid #949494;
+  border-left: 4px solid #cacaca;
   padding-left: 8px;
-  color: #3b3b3b;
+  color: #2496e2;
   font-size: 18px;
   font-family: "plex-semi"; }
   @media screen and (min-width: 700px) {
     blockquote p {
-      font-size: calc(18px + 4 * (100vw - 700px) / 172); } }
-  @media screen and (min-width: 872px) {
+      font-size: calc(18px + 4 * (100vw - 700px) / 124); } }
+  @media screen and (min-width: 824px) {
     blockquote p {
       font-size: 22px; } }
 
@@ -429,7 +358,7 @@ figure {
 
 figure h4 {
   font-style: italic;
-  color: #777;
+  color: #2496e2;
   font-size: 16px;
   font-family: "plex-italic"; }
 
@@ -466,8 +395,8 @@ h2 {
   color: #2496e2; }
   @media screen and (min-width: 700px) {
     h2 {
-      font-size: calc(30px + 10 * (100vw - 700px) / 172); } }
-  @media screen and (min-width: 872px) {
+      font-size: calc(30px + 10 * (100vw - 700px) / 124); } }
+  @media screen and (min-width: 824px) {
     h2 {
       font-size: 40px; } }
   h2 a {
@@ -480,8 +409,8 @@ h3 {
   color: #848484; }
   @media screen and (min-width: 700px) {
     h3 {
-      font-size: calc(16px + 2 * (100vw - 700px) / 172); } }
-  @media screen and (min-width: 872px) {
+      font-size: calc(16px + 2 * (100vw - 700px) / 124); } }
+  @media screen and (min-width: 824px) {
     h3 {
       font-size: 18px; } }
 
@@ -489,8 +418,8 @@ h4 {
   font-size: 21px; }
   @media screen and (min-width: 700px) {
     h4 {
-      font-size: calc(21px + 3 * (100vw - 700px) / 172); } }
-  @media screen and (min-width: 872px) {
+      font-size: calc(21px + 3 * (100vw - 700px) / 124); } }
+  @media screen and (min-width: 824px) {
     h4 {
       font-size: 24px; } }
 
@@ -498,8 +427,8 @@ h5 {
   font-size: 17px; }
   @media screen and (min-width: 700px) {
     h5 {
-      font-size: calc(17px + 2 * (100vw - 700px) / 172); } }
-  @media screen and (min-width: 872px) {
+      font-size: calc(17px + 2 * (100vw - 700px) / 124); } }
+  @media screen and (min-width: 824px) {
     h5 {
       font-size: 19px; } }
 
@@ -636,7 +565,7 @@ p {
 .forge-navigation .forge-tags .forge-tags-dropdown li a .forge-tags-dropdown-coutner {
   color: #fff;
   border: 1px solid #1b7fc2;
-  background-color: #80b7dc;
+  background-color: #43a9ec;
   border-radius: 4px;
   margin-left: auto;
   padding: 1px 5px 0px 5px;
@@ -712,6 +641,9 @@ p {
 .forge-articles article {
   margin-bottom: 44px; }
 
+.forge-articles p {
+  line-height: 26px; }
+
 .forge-articles article nav.forge-articles-readmore a {
   color: #717171;
   font-family: "fg-med";
@@ -723,6 +655,9 @@ p {
 
 /* Single Article
 /* ++++++++++++++++++++++++++++++++++++++++++++++ */
+.forge-article article {
+  margin-bottom: 44px; }
+
 .forge-article nav.forge-article-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -745,6 +680,19 @@ p {
 
 .forge-article ul {
   list-style-type: initial; }
+
+.forge-article p {
+  line-height: 26px; }
+
+.forge-article article p a {
+  color: #2496e2;
+  text-decoration: underline; }
+
+.forge-article .forge-article-navigation a {
+  -webkit-transition: ease-in-out, color .10s ease-in-out;
+  transition: ease-in-out, color .10s ease-in-out; }
+  .forge-article .forge-article-navigation a:hover {
+    color: #2496e2; }
 
 /* All Articles
 /* ++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -774,8 +722,8 @@ p {
   transition: ease-in-out, background-color .10s ease-in-out; }
   @media screen and (min-width: 700px) {
     .forge-meta-article .forge-meta-article-tag {
-      font-size: calc(13px + 2 * (100vw - 700px) / 172); } }
-  @media screen and (min-width: 872px) {
+      font-size: calc(13px + 2 * (100vw - 700px) / 124); } }
+  @media screen and (min-width: 824px) {
     .forge-meta-article .forge-meta-article-tag {
       font-size: 15px; } }
   .forge-meta-article .forge-meta-article-tag:hover {
@@ -810,8 +758,8 @@ p {
   color: #2496e2; }
   @media screen and (min-width: 700px) {
     .forge-summary .forge-summary-date .forge-summary-month {
-      font-size: calc(40px + 8 * (100vw - 700px) / 172); } }
-  @media screen and (min-width: 872px) {
+      font-size: calc(40px + 8 * (100vw - 700px) / 124); } }
+  @media screen and (min-width: 824px) {
     .forge-summary .forge-summary-date .forge-summary-month {
       font-size: 48px; } }
 
@@ -826,6 +774,11 @@ p {
   padding-top: 4px;
   padding-bottom: 4px;
   font-family: "fg-book"; }
+  .forge-summary .forge-summary-article li a {
+    -webkit-transition: ease-in-out, color .10s ease-in-out;
+    transition: ease-in-out, color .10s ease-in-out; }
+  .forge-summary .forge-summary-article li a:hover {
+    color: #2496e2; }
 
 .forge-summary .forge-summary-article li:first-child {
   border-top: solid 1px #cacaca; }
@@ -835,8 +788,8 @@ p {
 
 .forge-summary .forge-summary-article li time {
   margin-left: auto;
-  background-color: #717171;
-  border: solid 2px #545454;
+  background-color: #2496e2;
+  border: solid 2px #1b7fc2;
   color: #fff;
   border-radius: 100px;
   font-size: 14px;
@@ -858,11 +811,13 @@ p {
 
 .forge-pagintation .forge-pagination-navigation .forge-pagination-navigation-older,
 .forge-pagintation .forge-pagination-navigation .forge-pagination-navigation-newer {
+  -webkit-transition: ease-in-out, color .10s ease-in-out;
+  transition: ease-in-out, color .10s ease-in-out;
   color: #8d8d8d; }
 
 .forge-pagintation .forge-pagination-navigation .forge-pagination-navigation-older:hover,
 .forge-pagintation .forge-pagination-navigation .forge-pagination-navigation-newer:hover {
-  color: #000; }
+  color: #2496e2; }
 
 .forge-pagintation .forge-pagination-navigation .forge-pagination-navigation-older-alt {
   border-right: 1px solid #acacac;
@@ -872,10 +827,10 @@ p {
 /* Utility
 /* ++++++++++++++++++++++++++++++++++++++++++++++ */
 ::-moz-selection {
-  background: #000;
+  background: #2496e2;
   color: #fff; }
 ::selection {
-  background: #000;
+  background: #2496e2;
   color: #fff; }
 
 .forge-utility-visible {

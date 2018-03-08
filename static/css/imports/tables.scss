@@ -16,9 +16,9 @@ th, td {
 }
 
 th {
-  background-color: rgb(53, 53, 53);
+  background-color: $color-primary;
   color: #fff;
-  border: 1px solid rgb(116, 116, 116); 
+  border: 1px solid $color-primary-border; 
 }
 
 tr:nth-child(even) {

@@ -2,7 +2,7 @@
 /* ++++++++++++++++++++++++++++++++++++++++++++++ */
 
 $sm: 700px;
-$lg: 872px;
+$lg: 824px;
 
 /* Fonts
 /* ++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -86,9 +86,9 @@ blockquote {
 }
 
 blockquote p {
-  border-left: 4px solid #949494;
+  border-left: 4px solid #cacaca;
   padding-left: 8px;
-  color: #3b3b3b;
+  color: $color-primary;
   @include fluid-type(18px, 22px);
   font-family: $font-secondary-semi;
 }
@@ -99,7 +99,7 @@ figure {
 
 figure h4 {
   font-style: italic;
-  color: #777;
+  color: $color-primary;
   font-size: 16px;
   font-family: $font-secondary-italic;
 }
@@ -287,7 +287,7 @@ p {
 .forge-navigation .forge-tags .forge-tags-dropdown li a .forge-tags-dropdown-coutner {
   color: #fff;
   border: 1px solid $color-primary-border;
-  background-color: #80b7dc;
+  background-color: #43a9ec;
   border-radius: 4px;
   margin-left:auto;
   padding: 1px 5px 0px 5px;
@@ -370,6 +370,10 @@ p {
   margin-bottom: 44px;
 }
 
+.forge-articles p {
+  line-height: 26px;
+}
+
 .forge-articles article nav.forge-articles-readmore a {
   color: #717171;
   font-family: $font-primary-med;
@@ -382,6 +386,10 @@ p {
 
 /* Single Article
 /* ++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.forge-article article {
+  margin-bottom: 44px;
+}
 
 .forge-article nav.forge-article-navigation {
   display: flex;
@@ -410,6 +418,21 @@ p {
   list-style-type: initial;
 }
 
+.forge-article p {
+  line-height: 26px;
+}
+
+.forge-article article p a {
+  color: $color-primary;
+  text-decoration: underline;
+}
+
+.forge-article .forge-article-navigation a {
+  transition: ease-in-out, color .10s ease-in-out;
+  &:hover {
+    color: $color-primary;
+  }
+}
 
 /* All Articles
 /* ++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -474,6 +497,12 @@ p {
   padding-top: 4px;
   padding-bottom: 4px;
   font-family: $font-primary-reg;
+  & a {
+    transition: ease-in-out, color .10s ease-in-out;
+  }
+  & a:hover {
+    color: $color-primary;
+  }
  }
 
 .forge-summary .forge-summary-article li:first-child {
@@ -486,8 +515,8 @@ p {
 
 .forge-summary .forge-summary-article li time {
   margin-left: auto;
-  background-color: #717171;
-  border: solid 2px #545454;
+  background-color: $color-primary;
+  border: solid 2px $color-primary-border;
   color: #fff;
   border-radius: 100px;
   font-size: 14px;
@@ -513,12 +542,13 @@ margin-left: auto;
 
 .forge-pagintation .forge-pagination-navigation  .forge-pagination-navigation-older,
 .forge-pagintation .forge-pagination-navigation  .forge-pagination-navigation-newer  {
+  transition: ease-in-out, color .10s ease-in-out;
   color: #8d8d8d;
 }
 
 .forge-pagintation .forge-pagination-navigation  .forge-pagination-navigation-older:hover,
 .forge-pagintation .forge-pagination-navigation  .forge-pagination-navigation-newer:hover  {
-  color: #000;
+  color: $color-primary;
 }
 
 .forge-pagintation .forge-pagination-navigation  .forge-pagination-navigation-older {}
@@ -534,7 +564,7 @@ margin-left: auto;
 /* Utility
 /* ++++++++++++++++++++++++++++++++++++++++++++++ */
 
-@mixin mouse-select-color { background: #000; color: #fff; }
+@mixin mouse-select-color { background: $color-primary; color: #fff; }
 ::selection               { @include mouse-select-color; }
 
 .forge-utility-visible {
