@@ -145,6 +145,9 @@ h2 {
   & a {
     color: $color-primary;
   }
+  & a:hover {
+    color: $color-primary;
+  }
   & a:visited {
     color: $color-primary;
   }
