@@ -18,9 +18,9 @@ $font-secondary-semi: 'plex-semi';
 /* Colors
 /* ++++++++++++++++++++++++++++++++++++++++++++++ */
 
-$color-primary: #2496e2;
+$color-primary: #1b7fc2;
 $color-primary-border: #1b7fc2;
-// $color-grayscale: 
+
 /* Imports
 /* ++++++++++++++++++++++++++++++++++++++++++++++ */
 
@@ -116,6 +116,8 @@ hr {
 
 /* Typography
 /* ++++++++++++++++++++++++++++++++++++++++++++++ */
+
+$line-height: 1.45;
 
 @mixin links ($link, $visited, $hover, $active) {
   & {
@@ -395,7 +397,7 @@ p {
 }
 
 .forge-articles p {
-  line-height: 1.45;
+  line-height: $line-height;
   margin-bottom: 26px;
   @include sm-screen {
     margin-bottom: 18px;
@@ -453,7 +455,7 @@ p {
 }
 
 .forge-article p {
-  line-height: 1.45
+  line-height: $line-height;
 }
 
 .forge-article article p a {
