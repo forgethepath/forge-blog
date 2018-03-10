@@ -401,6 +401,8 @@ h2 {
       font-size: 40px; } }
   h2 a {
     color: #2496e2; }
+  h2 a:hover {
+    color: #2496e2; }
   h2 a:visited {
     color: #2496e2; }
 
