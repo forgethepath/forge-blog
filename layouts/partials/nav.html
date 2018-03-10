@@ -1,5 +1,5 @@
 <nav class="forge-navigation">
-  <ul>
+  <ul class="forge-navigation-items">
     {{ $currentPage := . }}
     {{ range .Site.Menus.main }}
       <li><a class="{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}active{{end}}" href="{{.URL}}">{{ .Name }}</a></li>
@@ -21,7 +21,9 @@
       </ul>
     </li>
     <li><a href="/rss">RSS</a></li>
-    <li id="forge-news-form">
+  </ul>
+  <ul id="forge-news-form">
+    <li>
       <form name="forge-news" id="forge-news" netlify>
         <label style="display:none">anti-spam<input name="anti-spam"></label>
         <label><input type="email" name="email" placeholder="Enter email to recieve newsletter" autocomplete="off" required></label>

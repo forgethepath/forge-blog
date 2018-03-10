@@ -1,7 +1,7 @@
 /* Breakpoints
 /* ++++++++++++++++++++++++++++++++++++++++++++++ */
 
-$sm: 700px;
+$sm: 720px;
 $lg: 824px;
 
 /* Fonts
@@ -151,8 +151,18 @@ h2 {
   & a:visited {
     color: $color-primary;
   }
+  @include sm-screen {
+    text-align: center;
+  }
 }
-h3 { @include fluid-type(16px, 18px); color: #848484; }
+h3 { 
+  @include fluid-type(16px, 18px); 
+  color: #848484; 
+  @include sm-screen {
+    width: 100%;
+    text-align: center;
+  }
+}
 h4 { @include fluid-type(21px, 24px); }
 h5 { @include fluid-type(17px, 19px); }
 
@@ -167,6 +177,12 @@ p {
 .forge-navigation {
   text-decoration: none;
   padding-bottom: 34px;
+  display: flex;
+  @include sm-screen {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .forge-navigation ul {
@@ -175,13 +191,14 @@ p {
   padding: 0;
   margin: 0;
   @include sm-screen {
+    width: 100%;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center
+    justify-content: center;
   }
 }
 
-.forge-navigation > ul > li:first-child > a {
+.forge-navigation > ul.forge-navigation-items > li:first-child > a {
   padding-left:0px;
   @include sm-screen {
     padding-left: 10px;
@@ -236,7 +253,7 @@ p {
   position: relative;
 }
 
-.forge-navigation .forge-tags-button {}
+.forge-navigation .forge-tags #forge-tags-button { }
 
 .forge-navigation .forge-tags .forge-tags-dropdown {
   min-width: 152px;
@@ -377,6 +394,12 @@ p {
   line-height: 26px;
 }
 
+.forge-articles article nav.forge-articles-readmore {
+  @include sm-screen {
+    text-align: center;
+  }
+}
+
 .forge-articles article nav.forge-articles-readmore a {
   color: #717171;
   font-family: $font-primary-med;
@@ -443,11 +466,18 @@ p {
 .forge-meta-article {
   display:flex;
   align-items: center;
+  flex-wrap: wrap;
+  @include sm-screen {
+   justify-content: center;
+  }
 }
 
 .forge-meta-article .forge-meta-article-tags {
   display: flex;
   margin-left: auto;
+  @include sm-screen {
+    margin: 6px 0 0 0;
+  }
 }
 
 .forge-meta-article .forge-meta-article-tag {
@@ -462,6 +492,11 @@ p {
   &:hover {
     background-color: $color-primary;
     color: #fff;
+  }
+  @include sm-screen {
+    &:first-child {
+      margin-left: 0;
+    }
   }
 }
 

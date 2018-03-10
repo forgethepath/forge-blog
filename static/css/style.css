@@ -296,13 +296,13 @@ html, body {
           box-sizing: border-box;
   font-family: "fg-book";
   font-size: 16px; }
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 720px) {
     html, body {
-      font-size: calc(16px + 3 * (100vw - 700px) / 124); } }
+      font-size: calc(16px + 3 * (100vw - 720px) / 104); } }
   @media screen and (min-width: 824px) {
     html, body {
       font-size: 19px; } }
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 720px) {
     html, body {
       margin-top: 8px; } }
 
@@ -346,9 +346,9 @@ blockquote p {
   color: #2496e2;
   font-size: 18px;
   font-family: "plex-semi"; }
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 720px) {
     blockquote p {
-      font-size: calc(18px + 4 * (100vw - 700px) / 124); } }
+      font-size: calc(18px + 4 * (100vw - 720px) / 104); } }
   @media screen and (min-width: 824px) {
     blockquote p {
       font-size: 22px; } }
@@ -393,9 +393,9 @@ h1, h2, h3, h4, h5, h6 {
 h2 {
   font-size: 30px;
   color: #2496e2; }
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 720px) {
     h2 {
-      font-size: calc(30px + 10 * (100vw - 700px) / 124); } }
+      font-size: calc(30px + 10 * (100vw - 720px) / 104); } }
   @media screen and (min-width: 824px) {
     h2 {
       font-size: 40px; } }
@@ -405,31 +405,38 @@ h2 {
     color: #2496e2; }
   h2 a:visited {
     color: #2496e2; }
+  @media screen and (max-width: 720px) {
+    h2 {
+      text-align: center; } }
 
 h3 {
   font-size: 16px;
   color: #848484; }
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 720px) {
     h3 {
-      font-size: calc(16px + 2 * (100vw - 700px) / 124); } }
+      font-size: calc(16px + 2 * (100vw - 720px) / 104); } }
   @media screen and (min-width: 824px) {
     h3 {
       font-size: 18px; } }
+  @media screen and (max-width: 720px) {
+    h3 {
+      width: 100%;
+      text-align: center; } }
 
 h4 {
   font-size: 21px; }
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 720px) {
     h4 {
-      font-size: calc(21px + 3 * (100vw - 700px) / 124); } }
+      font-size: calc(21px + 3 * (100vw - 720px) / 104); } }
   @media screen and (min-width: 824px) {
     h4 {
       font-size: 24px; } }
 
 h5 {
   font-size: 17px; }
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 720px) {
     h5 {
-      font-size: calc(17px + 2 * (100vw - 700px) / 124); } }
+      font-size: calc(17px + 2 * (100vw - 720px) / 104); } }
   @media screen and (min-width: 824px) {
     h5 {
       font-size: 19px; } }
@@ -442,17 +449,12 @@ p {
 /* ++++++++++++++++++++++++++++++++++++++++++++++ */
 .forge-navigation {
   text-decoration: none;
-  padding-bottom: 34px; }
-
-.forge-navigation ul {
+  padding-bottom: 34px;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  list-style-type: none;
-  padding: 0;
-  margin: 0; }
-  @media screen and (max-width: 700px) {
-    .forge-navigation ul {
+  display: flex; }
+  @media screen and (max-width: 720px) {
+    .forge-navigation {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
       -webkit-box-align: center;
@@ -462,10 +464,29 @@ p {
           -ms-flex-pack: center;
               justify-content: center; } }
 
-.forge-navigation > ul > li:first-child > a {
+.forge-navigation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+  @media screen and (max-width: 720px) {
+    .forge-navigation ul {
+      width: 100%;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+
+.forge-navigation > ul.forge-navigation-items > li:first-child > a {
   padding-left: 0px; }
-  @media screen and (max-width: 700px) {
-    .forge-navigation > ul > li:first-child > a {
+  @media screen and (max-width: 720px) {
+    .forge-navigation > ul.forge-navigation-items > li:first-child > a {
       padding-left: 10px; } }
 
 .forge-navigation a, .forge-navigation a:visited {
@@ -477,7 +498,7 @@ p {
   font-size: 16px;
   -webkit-transition: ease-in-out, color .10s ease-in-out;
   transition: ease-in-out, color .10s ease-in-out; }
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 720px) {
     .forge-navigation a, .forge-navigation a:visited {
       padding-left: 5px;
       padding-right: 5px; } }
@@ -582,7 +603,7 @@ p {
 /* ++++++++++++++++++++++++++++++++++++++++++++++ */
 .forge-navigation #forge-news-form {
   margin-left: auto; }
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 720px) {
     .forge-navigation #forge-news-form {
       margin-left: 0; } }
 
@@ -603,7 +624,7 @@ p {
   font-family: "fg-book";
   -webkit-transition: ease-in-out, border-color .15s ease-in-out;
   transition: ease-in-out, border-color .15s ease-in-out; }
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 720px) {
     .forge-navigation #forge-news label input {
       font-size: 13px;
       width: 203px;
@@ -634,7 +655,7 @@ p {
   cursor: pointer;
   padding: 12px 21px 12px 21px;
   font-family: "fg-book"; }
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 720px) {
     .forge-navigation #forge-news button {
       font-size: 16px; } }
 
@@ -645,6 +666,10 @@ p {
 
 .forge-articles p {
   line-height: 26px; }
+
+@media screen and (max-width: 720px) {
+  .forge-articles article nav.forge-articles-readmore {
+    text-align: center; } }
 
 .forge-articles article nav.forge-articles-readmore a {
   color: #717171;
@@ -704,13 +729,23 @@ p {
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  @media screen and (max-width: 720px) {
+    .forge-meta-article {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
 
 .forge-meta-article .forge-meta-article-tags {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-left: auto; }
+  @media screen and (max-width: 720px) {
+    .forge-meta-article .forge-meta-article-tags {
+      margin: 6px 0 0 0; } }
 
 .forge-meta-article .forge-meta-article-tag {
   color: #585858;
@@ -722,15 +757,18 @@ p {
   margin-left: 5px;
   -webkit-transition: ease-in-out, background-color .10s ease-in-out;
   transition: ease-in-out, background-color .10s ease-in-out; }
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 720px) {
     .forge-meta-article .forge-meta-article-tag {
-      font-size: calc(13px + 2 * (100vw - 700px) / 124); } }
+      font-size: calc(13px + 2 * (100vw - 720px) / 104); } }
   @media screen and (min-width: 824px) {
     .forge-meta-article .forge-meta-article-tag {
       font-size: 15px; } }
   .forge-meta-article .forge-meta-article-tag:hover {
     background-color: #2496e2;
     color: #fff; }
+  @media screen and (max-width: 720px) {
+    .forge-meta-article .forge-meta-article-tag:first-child {
+      margin-left: 0; } }
 
 /* Summary
 /* ++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -758,9 +796,9 @@ p {
   font-size: 40px;
   font-family: "fg-med";
   color: #2496e2; }
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 720px) {
     .forge-summary .forge-summary-date .forge-summary-month {
-      font-size: calc(40px + 8 * (100vw - 700px) / 124); } }
+      font-size: calc(40px + 8 * (100vw - 720px) / 104); } }
   @media screen and (min-width: 824px) {
     .forge-summary .forge-summary-date .forge-summary-month {
       font-size: 48px; } }
