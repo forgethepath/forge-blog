@@ -449,7 +449,7 @@ p {
 /* ++++++++++++++++++++++++++++++++++++++++++++++ */
 .forge-navigation {
   text-decoration: none;
-  padding-bottom: 34px;
+  margin-bottom: 34px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
@@ -462,7 +462,8 @@ p {
               align-items: center;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
-              justify-content: center; } }
+              justify-content: center;
+      margin-bottom: 20px; } }
 
 .forge-navigation ul {
   display: -webkit-box;
@@ -663,9 +664,16 @@ p {
 /* ++++++++++++++++++++++++++++++++++++++++++++++ */
 .forge-articles article {
   margin-bottom: 44px; }
+  @media screen and (max-width: 720px) {
+    .forge-articles article {
+      margin-bottom: 26px; } }
 
 .forge-articles p {
-  line-height: 26px; }
+  line-height: 1.45;
+  margin-bottom: 26px; }
+  @media screen and (max-width: 720px) {
+    .forge-articles p {
+      margin-bottom: 18px; } }
 
 @media screen and (max-width: 720px) {
   .forge-articles article nav.forge-articles-readmore {
@@ -709,7 +717,7 @@ p {
   list-style-type: initial; }
 
 .forge-article p {
-  line-height: 26px; }
+  line-height: 1.45; }
 
 .forge-article article p a {
   color: #2496e2;
@@ -745,7 +753,12 @@ p {
   margin-left: auto; }
   @media screen and (max-width: 720px) {
     .forge-meta-article .forge-meta-article-tags {
-      margin: 6px 0 0 0; } }
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin: 0; } }
 
 .forge-meta-article .forge-meta-article-tag {
   color: #585858;
@@ -754,7 +767,7 @@ p {
   padding: 2px 10px 2px 10px;
   font-size: 13px;
   font-family: "fg-med";
-  margin-left: 5px;
+  margin-left: 4px;
   -webkit-transition: ease-in-out, background-color .10s ease-in-out;
   transition: ease-in-out, background-color .10s ease-in-out; }
   @media screen and (min-width: 720px) {
@@ -767,8 +780,10 @@ p {
     background-color: #2496e2;
     color: #fff; }
   @media screen and (max-width: 720px) {
-    .forge-meta-article .forge-meta-article-tag:first-child {
-      margin-left: 0; } }
+    .forge-meta-article .forge-meta-article-tag {
+      margin-top: 4px; }
+      .forge-meta-article .forge-meta-article-tag:first-child {
+        margin-left: 0; } }
 
 /* Summary
 /* ++++++++++++++++++++++++++++++++++++++++++++++ */

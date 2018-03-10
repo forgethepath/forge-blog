@@ -176,12 +176,13 @@ p {
 
 .forge-navigation {
   text-decoration: none;
-  padding-bottom: 34px;
+  margin-bottom: 34px;
   display: flex;
   @include sm-screen {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    margin-bottom: 20px;
   }
 }
 
@@ -388,10 +389,17 @@ p {
 
 .forge-articles article {
   margin-bottom: 44px;
+  @include sm-screen {
+    margin-bottom: 26px;
+  }
 }
 
 .forge-articles p {
-  line-height: 26px;
+  line-height: 1.45;
+  margin-bottom: 26px;
+  @include sm-screen {
+    margin-bottom: 18px;
+  }
 }
 
 .forge-articles article nav.forge-articles-readmore {
@@ -445,7 +453,7 @@ p {
 }
 
 .forge-article p {
-  line-height: 26px;
+  line-height: 1.45
 }
 
 .forge-article article p a {
@@ -476,7 +484,9 @@ p {
   display: flex;
   margin-left: auto;
   @include sm-screen {
-    margin: 6px 0 0 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
   }
 }
 
@@ -487,13 +497,14 @@ p {
   padding: 2px 10px 2px 10px;
   @include fluid-type(13px, 15px);
   font-family: $font-primary-med;
-  margin-left: 5px;
+  margin-left: 4px;
   transition: ease-in-out, background-color .10s ease-in-out;
   &:hover {
     background-color: $color-primary;
     color: #fff;
   }
   @include sm-screen {
+    margin-top: 4px;
     &:first-child {
       margin-left: 0;
     }
