@@ -122,27 +122,27 @@
 
 /* Keyword */
 .chroma .k {
-  color: #000; }
+  color: #2496e2; }
 
 /* KeywordConstant */
 .chroma .kc {
-  color: #000; }
+  color: #2496e2; }
 
 /* KeywordDeclaration */
 .chroma .kd {
-  color: #000; }
+  color: #2496e2; }
 
 /* KeywordNamespace */
 .chroma .kn {
-  color: #000; }
+  color: #2496e2; }
 
 /* KeywordPseudo */
 .chroma .kp {
-  color: #000; }
+  color: #2496e2; }
 
 /* KeywordReserved */
 .chroma .kr {
-  color: #000; }
+  color: #2496e2; }
 
 /* KeywordType */
 .chroma .kt {
@@ -210,7 +210,7 @@
 
 /* OperatorWord */
 .chroma .ow {
-  color: #000; }
+  color: #2496e2; }
 
 /* Comment */
 .chroma .c {
@@ -234,11 +234,11 @@
 
 /* CommentPreproc */
 .chroma .cp {
-  color: #000; }
+  color: #2496e2; }
 
 /* CommentPreprocFile */
 .chroma .cpf {
-  color: #000; }
+  color: #2496e2; }
 
 /* GenericEmph */
 .chroma .ge {
@@ -275,7 +275,7 @@ th, td {
   padding: 6px; }
 
 th {
-  background-color: #000;
+  background-color: #2496e2;
   color: #fff;
   border: 1px solid #1b7fc2; }
 
@@ -343,7 +343,7 @@ blockquote {
 blockquote p {
   border-left: 4px solid #cacaca;
   padding-left: 8px;
-  color: #000;
+  color: #2496e2;
   font-size: 18px;
   font-family: "plex-semi"; }
   @media screen and (min-width: 720px) {
@@ -358,7 +358,7 @@ figure {
 
 figure h4 {
   font-style: italic;
-  color: #000;
+  color: #2496e2;
   font-size: 16px;
   font-family: "plex-italic"; }
 
@@ -392,7 +392,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h2 {
   font-size: 30px;
-  color: #000; }
+  color: #2496e2; }
   @media screen and (min-width: 720px) {
     h2 {
       font-size: calc(30px + 10 * (100vw - 720px) / 104); } }
@@ -400,11 +400,11 @@ h2 {
     h2 {
       font-size: 40px; } }
   h2 a {
-    color: #000; }
+    color: #2496e2; }
   h2 a:hover {
-    color: #000; }
+    color: #2496e2; }
   h2 a:visited {
-    color: #000; }
+    color: #2496e2; }
   @media screen and (max-width: 720px) {
     h2 {
       text-align: center; } }
@@ -505,12 +505,12 @@ p {
       padding-right: 5px; } }
 
 .forge-navigation a.active {
-  color: #000; }
+  color: #2496e2; }
   .forge-navigation a.active:hover {
-    color: #000; }
+    color: #2496e2; }
 
 .forge-navigation a:hover {
-  color: #000; }
+  color: #2496e2; }
 
 .forge-navigation .forge-tags .utiltiy-arrow-down {
   width: 0;
@@ -523,7 +523,7 @@ p {
   margin-left: 4px; }
 
 .forge-navigation a:hover .utiltiy-arrow-down {
-  border-top: #000 6px solid; }
+  border-top: #2496e2 6px solid; }
 
 /* Navigation Bar: Tags Dropdown */
 /* ++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -651,7 +651,7 @@ p {
   border-radius: 4px;
   border: solid 1px #1b7fc2;
   font-size: 19px;
-  background-color: #000;
+  background-color: #2496e2;
   border-radius: 0px 4px 4px 0px;
   cursor: pointer;
   padding: 12px 21px 12px 21px;
@@ -686,7 +686,7 @@ p {
   transition: ease-in-out, color .10s ease-in-out; }
 
 .forge-articles article nav.forge-articles-readmore a:hover {
-  color: #000; }
+  color: #2496e2; }
 
 /* Single Article
 /* ++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -720,14 +720,14 @@ p {
   line-height: 1.45; }
 
 .forge-article article p a {
-  color: #000;
+  color: #2496e2;
   text-decoration: underline; }
 
 .forge-article .forge-article-navigation a {
   -webkit-transition: ease-in-out, color .10s ease-in-out;
   transition: ease-in-out, color .10s ease-in-out; }
   .forge-article .forge-article-navigation a:hover {
-    color: #000; }
+    color: #2496e2; }
 
 /* All Articles
 /* ++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -762,7 +762,7 @@ p {
 
 .forge-meta-article .forge-meta-article-tag {
   color: #585858;
-  border: solid 3px #000;
+  border: solid 3px #2496e2;
   border-radius: 5px;
   padding: 2px 10px 2px 10px;
   font-size: 13px;
@@ -777,7 +777,7 @@ p {
     .forge-meta-article .forge-meta-article-tag {
       font-size: 15px; } }
   .forge-meta-article .forge-meta-article-tag:hover {
-    background-color: #000;
+    background-color: #2496e2;
     color: #fff; }
   @media screen and (max-width: 720px) {
     .forge-meta-article .forge-meta-article-tag {
@@ -810,7 +810,7 @@ p {
 .forge-summary .forge-summary-date .forge-summary-month {
   font-size: 40px;
   font-family: "fg-med";
-  color: #000; }
+  color: #2496e2; }
   @media screen and (min-width: 720px) {
     .forge-summary .forge-summary-date .forge-summary-month {
       font-size: calc(40px + 8 * (100vw - 720px) / 104); } }
@@ -833,7 +833,7 @@ p {
     -webkit-transition: ease-in-out, color .10s ease-in-out;
     transition: ease-in-out, color .10s ease-in-out; }
   .forge-summary .forge-summary-article li a:hover {
-    color: #000; }
+    color: #2496e2; }
 
 .forge-summary .forge-summary-article li:first-child {
   border-top: solid 1px #cacaca; }
@@ -843,7 +843,7 @@ p {
 
 .forge-summary .forge-summary-article li time {
   margin-left: auto;
-  background-color: #000;
+  background-color: #2496e2;
   border: solid 2px #1b7fc2;
   color: #fff;
   border-radius: 100px;
@@ -872,7 +872,7 @@ p {
 
 .forge-pagintation .forge-pagination-navigation .forge-pagination-navigation-older:hover,
 .forge-pagintation .forge-pagination-navigation .forge-pagination-navigation-newer:hover {
-  color: #000; }
+  color: #2496e2; }
 
 .forge-pagintation .forge-pagination-navigation .forge-pagination-navigation-older-alt {
   border-right: 1px solid #acacac;
@@ -882,10 +882,10 @@ p {
 /* Utility
 /* ++++++++++++++++++++++++++++++++++++++++++++++ */
 ::-moz-selection {
-  background: #000;
+  background: #2496e2;
   color: #fff; }
 ::selection {
-  background: #000;
+  background: #2496e2;
   color: #fff; }
 
 .forge-utility-visible {
