@@ -1,3 +1,5 @@
+"use strict";
+
 var forge_back = document.querySelector('.forge-article-navigation-back');
 if (forge_back && document.referrer.includes(window.location.host) && document.referrer != "" && (document.referrer.includes('page') || document.referrer.includes('summary') || document.referrer.includes('tags'))) {
   forge_back.href = document.referrer;
