@@ -1,15 +1,3 @@
-"use strict";
-
-if (window.netlifyIdentity) {
-  window.netlifyIdentity.on("init", function (user) {
-    if (!user) {
-      window.netlifyIdentity.on("login", function () {
-        document.location.href = "/admin/";
-      });
-    }
-  });
-};
-
 var forge_back = document.querySelector('.forge-article-navigation-back');
 if (forge_back && document.referrer.includes(window.location.host) && document.referrer != "" && (document.referrer.includes('page') || document.referrer.includes('summary') || document.referrer.includes('tags'))) {
   forge_back.href = document.referrer;
