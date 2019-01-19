@@ -1,4 +1,4 @@
-baseURL = "http://forge-blog.netlify.com/"
+baseURL = "https://forgethepath.com/"
 languageCode = "en-us"
 title = "Forge The Path"
 enableRobotsTXT = true
