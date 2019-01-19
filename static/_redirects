@@ -1,2 +1,3 @@
+https://forge-blog.netlify.com/* https://www.forgethepath.com/:splat 301!
 /api  /index.json   200
 /rss  /index.xml    200
