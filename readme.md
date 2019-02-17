@@ -1,6 +1,7 @@
-### **Forge Blog** - powered by Hugo, Github, Netlify, Netlify CMS, Mailgun, GCP, & Algolia.
-
+### **Forge Blog** - powered by Hugo, Github, Netlify, Netlify CMS, Mailgun, Algolia, Zapier.
 ---
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/53da425e-12e2-49ca-b883-4aaeb3f09a87/deploy-status)](https://app.netlify.com/sites/forge-blog/deploys) 
 
 ```
 Minimial blog, with a small, modern, codebase. Currently in development.
