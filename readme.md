@@ -25,7 +25,7 @@ yarn start
 
 **Updating content:** 
 
-It is possible to update content using the Netlify CMS or Hugo CLI. Pushing to master branch or editing through CMS will deploy site.
+It is possible to update content using the Netlify CMS or Hugo CLI. Pushing to master branch or editing through CMS will deploy the site.
 
 ```
 forgethepath.com/admin
