@@ -35,7 +35,7 @@ or
 
 ```
 hugo new articles/my-first-post.md
-git add -A
+git add articles/my-first-post.md
 git commit -m "added a new post"
 git push
 ```
