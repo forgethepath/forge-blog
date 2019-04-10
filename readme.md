@@ -45,8 +45,6 @@ git push
 
 Or integrate with a third party service such as forestry.io 
 
-forestry.io
-
 **Franklin Gothic is a lisenced font, it is included in this repository with the consent of FontSpring for the use of the author.
 Use of the font by other persons requires the purchase of a lisence by the persons of interest.**
 
