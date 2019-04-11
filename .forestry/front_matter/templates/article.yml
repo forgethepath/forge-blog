@@ -11,14 +11,6 @@ fields:
 - type: list
   name: tags
   label: tags
-- type: textarea
-  name: article
-  label: Article
-  config:
-    wysiwyg: true
-    schema:
-      format: markdown
-    required: false
 - type: text
   name: txt
   label: txt
