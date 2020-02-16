@@ -14,7 +14,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.3",
-    "npm": "^5.7.1"
+    "npm": "^6.13.4"
   },
   "scripts": {
     "start": "concurrently \"hugo server -D\" \"gulp watch\""
