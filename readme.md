@@ -26,7 +26,7 @@ yarn start
 
 **Updating content:** 
 
-It is possible to update content using the Forestry.io, using Netlify CMS, or Hugo CLI. Pushing to the master branch or editing through a CMS will deploy the site using Netlify. Forestery.io has better mobile support then Hugo CMS if that is a consideration.
+It is possible to update content using the Forestry.io, using Netlify CMS, or Hugo CLI. Pushing to the master branch or editing through a CMS will deploy the site using Netlify. Forestery.io has better mobile support then Netlify CMS if that is a consideration.
 
 Netlify CMS
 
